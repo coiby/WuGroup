@@ -6,7 +6,7 @@
 
 ```bash
  echo "GATEWAY=1.0.0.7" >> /etc/sysconfig/network-scripts/ifcfg-eth0
-  /etc/init.d/network restart
+ /etc/init.d/network restart
   echo "nameserver 202.38.64.56" >> /etc/resolv.conf
 ```
 
