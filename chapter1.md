@@ -4,7 +4,9 @@
 
 ### Enable network access for node
 
-
+```bash
+ echo "GATEWAY=1.0.0.7" >> /etc/sysconfig/network-scripts/ifcfg-eth0
+```
 
 ## screen
 
