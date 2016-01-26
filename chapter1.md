@@ -1,5 +1,10 @@
 # First Chapter
 
+## What to do after a node's system is reinstalled
+
+### Enable network access for node
+
+
 
 ## screen
 
