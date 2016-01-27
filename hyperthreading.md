@@ -22,6 +22,6 @@ export OMP_NUM_THREADS=64
 ### MPI
 ```bash
 #PBS -l nodes=node06:ppn=32
-
+...
 mpirun -np 64 program
 ```
