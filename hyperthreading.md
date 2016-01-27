@@ -4,3 +4,8 @@ In the ideal case, you can double the computational capability after enabling hy
 
 ## Enable HT
 BIOS -> Advanced Settings -> Enable Hyper Threading
+
+## How to ask for cores when running job
+
+`pbsnodes` still tell you the number of cpu cores hasn't doubled. But `cat /proc/cpuinfos` will tell you the truth.
+
