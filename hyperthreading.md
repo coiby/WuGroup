@@ -1,6 +1,6 @@
 # Hyper Threading
 
-In the ideal case, you can double the computational capability after enabling hyper threading. For example, if you have 32 physical cpu cores with hyper threading on, you'll have 64 cores.
+In the ideal case, you can double the computational capability after enabling hyper threading. For example, if you have 32 physical CPU cores with hyper threading on, you'll have 64 cores.
 
 ## Enable HT
 BIOS -> Advanced Settings -> Enable Hyper Threading
@@ -9,3 +9,7 @@ BIOS -> Advanced Settings -> Enable Hyper Threading
 
 `pbsnodes` still tell you the number of CPU cores hasn't doubled. But `cat /proc/cpuinfos` will tell you the truth.
 
+### OpenMP
+```
+export OMP_NUM_THREADS=64
+```
