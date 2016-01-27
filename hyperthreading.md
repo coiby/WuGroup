@@ -13,7 +13,15 @@ BIOS -> Advanced Settings -> Enable Hyper Threading
 #PBS -l nodes=node06:ppn=32 !64? no!
 ```
 
+Instead you tell the job how many threads will be used.
 ### OpenMP
 ```
 export OMP_NUM_THREADS=64
+```
+
+### MPI
+```bash
+#PBS -l nodes=node06:ppn=32
+
+mpirun -np 64 program
 ```
