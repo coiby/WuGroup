@@ -2,6 +2,8 @@
 
 In the ideal case, you can double the computational capability after enabling hyper threading. For example, if you have 32 physical CPU cores with hyper threading on, you'll have 64 cores.
 
+If it's a computationally intensive program, HT will not benefit you. Otherwise, the less computationally intensive, the more the performance gain.
+
 
 ## Enable HT
 BIOS -> Advanced Settings -> Enable Hyper Threading
