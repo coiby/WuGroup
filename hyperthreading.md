@@ -2,7 +2,7 @@
 
 In the ideal case, you can double the computational capability after enabling hyper threading. For example, if you have 32 physical CPU cores with hyper threading on, you'll have 64 cores.
 
-If it's a computationally intensive program, HT will not benefit you. Otherwise, the less computationally intensive, the more the performance gain.
+If it's a computationally intensive program, HT will not benefit you. Otherwise, the less computationally intensive the program, the more the performance gain.
 
 [Does Hyper-Threading Improve Performance of Computationally Intensive Programs? | K M Masum Habib](http://masumhabib.com/blog/does-hyper-threading-improve-performance-of-computationally-intensive-programs/)
 
