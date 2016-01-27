@@ -7,7 +7,11 @@ BIOS -> Advanced Settings -> Enable Hyper Threading
 
 ## How to ask for cores when running job
 
-`pbsnodes` still tell you the number of CPU cores hasn't doubled. But `cat /proc/cpuinfos` will tell you the truth.
+`pbsnodes` still tell you the number of CPU cores hasn't doubled (`cat /proc/cpuinfos` will tell you the truth). It means you can't ask for double cores in the PBS header.
+
+```bash
+#PBS -l nodes=node06:ppn=32 !64? no!
+```
 
 ### OpenMP
 ```
