@@ -4,4 +4,5 @@
 * [First Chapter](chapter1.md)
 * [Administration](administration.md)
    * [HyperThreading](hyperthreading.md)
+   * Installing Lammps
 
