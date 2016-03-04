@@ -8,3 +8,7 @@ git clone git://git.lammps.org/lammps-ro.git mylammps
 ```
 make mpi
 ```
+3. Test
+```
+
+```
