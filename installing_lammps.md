@@ -1,4 +1,7 @@
 # Installing LAMMPS
 
-1. Download a tarball from [http://lammps.sandia.gov/download.html](http://lammps.sandia.gov/download.html#tar)
+1. Download a tarball from [http://lammps.sandia.gov/download.html](http://lammps.sandia.gov/download.html#tar) by `git`
+```bash
+
+```
 2. 
