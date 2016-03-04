@@ -1,3 +1,3 @@
 # Installing Lammps
 
-1. Download tarball from 
+1. Download a tarball from http://lammps.sandia.gov/download.html
