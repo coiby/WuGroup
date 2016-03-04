@@ -10,5 +10,7 @@ make mpi
 ```
 3. Test
 ```bash
-
+mpirun -np 4 ~/lammps/src/lmp_mpi -in in.lj 
 ```
+
+Or you can install pre-built binary (SEE [http://lammps.sandia.gov/download.html](http://lammps.sandia.gov/download.html#rpm))
