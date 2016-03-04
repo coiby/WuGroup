@@ -4,4 +4,7 @@
 ```bash
 git clone git://git.lammps.org/lammps-ro.git mylammps
 ```
-2. 
+2. Unpack and make
+```
+
+```
