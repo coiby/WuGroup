@@ -16,7 +16,8 @@ mpirun -np 4 ~/lammps/src/lmp_mpi -in in.lj
 Or you can install pre-built binary (SEE [Pre-built binary RPMs for Fedora/RedHat/CentOS/openSUSE ](http://lammps.sandia.gov/download.html#rpm))
 
 ##  libraries: libimf.so: cannot open shared object file
-If you 
+If you encounter this problem,
+>/home/coiby/lammps/src/lmp_mpi: error while loading shared libraries: libimf.so: cannot open shared object file: No such file or directory
 ```bash
 export LD_LIBRARY_PATH=/opt/intel/icc/composer_xe_2013.3.163/mkl/lib/intel64:/opt/intel/icc/composer_xe_2013.3.163/compiler/lib/intel64:$LD_LIBRARY_PATH
 ```
