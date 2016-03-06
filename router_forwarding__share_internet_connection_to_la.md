@@ -1,5 +1,7 @@
 # Router forwarding — Share Internet Connection to LAN
 
+Computing nodes don't have access to Internet. This will lead to problems such as:
+ - 
 
 The basic idea is to use router forwarding
 1. set computing nodes' gateway to be control node's IP
