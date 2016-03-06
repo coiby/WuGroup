@@ -4,7 +4,7 @@ Computing nodes don't have access to Internet. This will lead to problems in com
 - Matlab refuse to run because of failing to verify license
 - unable to install/update softwares 
 
-To address these problems, the idea is to use router forwarding to share control node's Internet Connection to LAN
+To address these problems, the idea is to use router forwarding to share control node's Internet Connection to LAN (local area network)
 1. set computing nodes' gateway to be control node's IP
 2. enable route forwarding on control node
 
