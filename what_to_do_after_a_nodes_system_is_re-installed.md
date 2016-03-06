@@ -1,5 +1,6 @@
 # What to do after a node's system is re-installed
-### Enable network access for node
+
+## Enable network access for node
 
 ```bash
  echo "GATEWAY=1.0.0.7" >> /etc/sysconfig/network-scripts/ifcfg-eth0
