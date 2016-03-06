@@ -1,3 +1,3 @@
-# Wu Group's Cluster Guide
+# User Guide of Wu Group's Cluster 
 
 This file serves as your book's preface, a great place to describe your book's content and ideas.
