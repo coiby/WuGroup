@@ -22,7 +22,7 @@ For temporary effect (after system rebooting, the change will be gone), add rout
  ```
  or
  ```sh
- ifdown eth0 && ifup eth0 #Sometimes it failes and you may also lose the ssh connetion. It means you have to go to the physical room to restart the network service.
+ ifdown eth0 && ifup eth0 #Sometimes it failes and you may also lose the ssh connetion. It means you have to go to the room to physically restart the network service.
  ```
 
 ## Step 2: Enable Route Forwarding On Control Node
