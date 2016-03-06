@@ -10,7 +10,7 @@ To address these problems, the idea is to use router forwarding to share control
 
 ## Step 1: Set Computing Nodes' Gateway
 For node{01-06}
-1. Append the line to `/etc/sysconfig/network-scripts/ifcfg-eth0` (for node0{1,2,5}, it's ifcfg-eth1)
+1. Add the address of login node by appending the following line to `/etc/sysconfig/network-scripts/ifcfg-eth0` (for node0{1,2,5}, it's ifcfg-eth1)
 ```bash
  echo "GATEWAY=1.0.0.7" >> /etc/sysconfig/network-scripts/ifcfg-eth0
 ```
