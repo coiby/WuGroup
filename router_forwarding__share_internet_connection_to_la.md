@@ -60,7 +60,6 @@ Notes:
 nameserver 202.38.64.56
 nameserver 202.38.64.17
 ```
-
 (*This is not a permanent change*)
 
 [iptables 应用初探（nat+三层访问控制）](http://www.vgos.net/?p=152)
