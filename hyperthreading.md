@@ -16,16 +16,12 @@ BIOS -> Advanced Settings -> Enable Hyper Threading
 `pbsnodes` still tell you the number of CPU cores hasn't doubled (`cat /proc/cpuinfos` will tell you the truth). It means you can't ask for double cores in the PBS header.
 
 ```bash
-#PBS -l nodes=node06:ppn=32 !64? no!
+#PBS -l nodes=node06:ppn=32  
 ...
 mpirun -np 146  pw.x   < scf.in > alat$alat.scf.out
 ```
 
 Instead you can specify how many threads will be used.
-### OpenMP
-```
-export OMP_NUM_THREADS=64
-```
 
 ### MPI
 ```bash
@@ -33,3 +29,10 @@ export OMP_NUM_THREADS=64
 ...
 mpirun -np 64 program
 ```
+
+### OpenMP
+```
+export OMP_NUM_THREADS=64
+```
+
+
