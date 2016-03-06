@@ -2,7 +2,7 @@
 
 Computing nodes don't have access to Internet. This will lead to problems in computing nodes such as:
 - Matlab refuse to run for failing to verify license
-- unable to install/update softwares on
+- unable to install/update softwares 
 
 The basic idea is to use router forwarding
 1. set computing nodes' gateway to be control node's IP
