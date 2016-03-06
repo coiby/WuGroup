@@ -6,4 +6,5 @@
    * [What to do after a node's system is re-installed](what_to_do_after_a_nodes_system_is_re-installed.md)
    * [HyperThreading](hyperthreading.md)
    * [Installing Lammps](installing_lammps.md)
+   * Temperature Moniter
 
