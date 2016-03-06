@@ -1,7 +1,7 @@
 # Router forwarding — Share Internet Connection to LAN
 
 Computing nodes don't have access to Internet. This will lead to problems in computing nodes such as:
-- Matlab refuse to run for failing to verify license
+- Matlab refuse to run because of failing to verify license
 - unable to install/update softwares 
 
 The basic idea is to use router forwarding
