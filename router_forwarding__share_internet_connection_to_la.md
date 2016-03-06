@@ -4,7 +4,7 @@ Computing nodes don't have access to Internet. This will lead to problems in com
 - Matlab refuse to run because of failing to verify license
 - unable to install/update softwares 
 
-To address these problems, the idea is to use router forwarding
+To address these problems, the idea is to use router forwarding to share control node's Internet Connection to LAN
 1. set computing nodes' gateway to be control node's IP
 2. enable route forwarding on control node
 
@@ -14,7 +14,7 @@ For node{01-06}
 ```bash
  echo "GATEWAY=1.0.0.7" >> /etc/sysconfig/network-scripts/ifcfg-eth0
 ```
-For temporary effect (after rebooting, the change will be gone), add router `route add default gw 1.0.0.7`
+For temporary effect (after system rebooting, the change will be gone), add router `route add default gw 1.0.0.7`
 2. restart network interface 
  
  ```
