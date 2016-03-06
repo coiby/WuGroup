@@ -17,6 +17,8 @@ BIOS -> Advanced Settings -> Enable Hyper Threading
 
 ```bash
 #PBS -l nodes=node06:ppn=32 !64? no!
+...
+mpirun -np 146  pw.x   < scf.in > alat$alat.scf.out
 ```
 
 Instead you can specify how many threads will be used.
