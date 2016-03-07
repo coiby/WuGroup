@@ -1,2 +1,2 @@
-# Temperature Moniter
+# Temperature Monitor
 
