@@ -14,7 +14,7 @@ Xauth username *myusername*
 Xauth password *mypassword*
 ```
 
-sudo vpn-connect
+sudo vpnc-connect
 
 
 ## screen
