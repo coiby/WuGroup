@@ -2,7 +2,13 @@
  
 # NSCC-GZ
 
+sudo apt-get install vpnc
 
+/etc/vpnc/default.conf
+
+```
+
+```
 
 
 ## screen
