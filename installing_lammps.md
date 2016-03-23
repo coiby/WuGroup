@@ -15,6 +15,10 @@ mpirun -np 4 ~/lammps/src/lmp_mpi -in in.lj
 
 Or you can install pre-built binary RPMs(SEE [Pre-built binary RPMs for Fedora/RedHat/CentOS/openSUSE ](http://lammps.sandia.gov/download.html#rpm))
 
+Notes:
+1. When you download LAMMPS source files from the SVN or Git repositories, no packages are pre-installed. You can run `make yes-packageName` or `make yes-all` to install make packages
+
+
 ## atom style 
 
 
