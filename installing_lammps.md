@@ -15,7 +15,7 @@ mpirun -np 4 ~/lammps/src/lmp_mpi -in in.lj
 
 Or you can install pre-built binary RPMs(SEE [Pre-built binary RPMs for Fedora/RedHat/CentOS/openSUSE ](http://lammps.sandia.gov/download.html#rpm))
 
-## A
+## atom style 
 
 [LAMMPS / Mailing Lists](https://sourceforge.net/p/lammps/mailman/message/34639586/)
 
