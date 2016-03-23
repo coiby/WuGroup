@@ -19,7 +19,7 @@ Notes:
 1. When you download LAMMPS source files from the SVN or Git repositories, no packages are pre-installed. You can run `make yes-packageName` or `make yes-all` to install make packages.
 
 
-## atom style 
+## Missing full atom style 
 
 [LAMMPS / Mailing Lists](https://sourceforge.net/p/lammps/mailman/message/34639586/)
 >atom_style full is part of the MOLECULE package, which you didn't install.
