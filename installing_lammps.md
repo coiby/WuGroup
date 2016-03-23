@@ -17,6 +17,8 @@ Or you can install pre-built binary RPMs(SEE [Pre-built binary RPMs for Fedora/R
 
 ## atom style 
 
+
+
 [LAMMPS / Mailing Lists](https://sourceforge.net/p/lammps/mailman/message/34639586/)
 
 ##  libraries: libimf.so: cannot open shared object file
