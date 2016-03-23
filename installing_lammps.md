@@ -13,7 +13,7 @@ make mpi
 mpirun -np 4 ~/lammps/src/lmp_mpi -in in.lj 
 ```
 
-Or you can install pre-built binary (SEE [Pre-built binary RPMs for Fedora/RedHat/CentOS/openSUSE ](http://lammps.sandia.gov/download.html#rpm))
+Or you can install pre-built binary RPMs(SEE [Pre-built binary RPMs for Fedora/RedHat/CentOS/openSUSE ](http://lammps.sandia.gov/download.html#rpm))
 
 ##  libraries: libimf.so: cannot open shared object file
 If you encounter this problem,
