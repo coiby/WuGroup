@@ -18,6 +18,8 @@ Or you can install pre-built binary RPMs(SEE [Pre-built binary RPMs for Fedora/R
 ## atom style 
 
 
+>atom_style full is part of the MOLECULE package, which you didn't install.
+when you compile from the git repo, no packages are installed by default.
 
 [LAMMPS / Mailing Lists](https://sourceforge.net/p/lammps/mailman/message/34639586/)
 
