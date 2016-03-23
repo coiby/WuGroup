@@ -27,7 +27,10 @@ when you compile from the git repo, no packages are installed by default.
 
 You can run `/home/coiby/lammps/src/lmp_mpi -h` to get a list of atom style,
 ```
+* Atom styles:
 
+atomic          body            charge          ellipsoid       hybrid          
+line            sphere          tri
 ```
 
 ##  libraries: libimf.so: cannot open shared object file
