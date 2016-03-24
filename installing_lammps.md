@@ -27,7 +27,7 @@ when you compile from the git repo, no packages are installed by default.
 
 After you execute `make yes-molecule`, you need to re-run `make mpi`.
 
-You can run `/home/coiby/lammps/src/lmp_mpi -h` to get a list of atom styles,
+You can run `/home/coiby/lammps/src/lmp_mpi -h` to get the list of available styles,
 ```
 * Atom styles:
 
