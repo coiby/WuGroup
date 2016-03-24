@@ -44,6 +44,8 @@ After you execute `make yes-molecule`, you need to re-run `make mpi`.
 When running examples/dreiding, an error is given:
 >invalid pair style...
 
+Comparing `in.dreiding` with the list of available styles, `long` is missing.
+
 According to [pair_style lj/long/coul/long command — LAMMPS documentation](http://lammps.sandia.gov/doc/pair_lj_long.html), it's part of KSPACE package,
 1. `make yes-kspace`
 2. `make mpi`
