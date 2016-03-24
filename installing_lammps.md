@@ -17,7 +17,7 @@ Or you can install pre-built binary RPMs(SEE [Pre-built binary RPMs for Fedora/R
 
 Notes:
 1. When you download LAMMPS source files from the SVN or Git repositories, no packages are pre-installed. You can run `make yes-packageName` to install a required package or `make yes-all` to install all packages.
-
+2. `make no-lib` remove the packages than depend on third-party packages
 
 ## Missing full atom style 
 
