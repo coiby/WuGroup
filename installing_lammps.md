@@ -33,6 +33,10 @@ atomic          body            charge          ellipsoid       hybrid
 line            sphere          tri
 ```
 
+## 
+
+[Re: [lammps-users] Compiling errors - advice needed](http://lammps.sandia.gov/threads/msg48777.html)
+
 ##  libraries: libimf.so: cannot open shared object file
 If you encounter this problem,
 >/home/coiby/lammps/src/lmp_mpi: error while loading shared libraries: libimf.so: cannot open shared object file: No such file or directory
