@@ -32,6 +32,7 @@ You can run `/home/coiby/lammps/src/lmp_mpi -h` to get a list of atom styles,
 atomic          body            charge          ellipsoid       hybrid          
 line            sphere          tri
 ```
+After you execute `make yes-molecule`, you need to re-run `make mpi`
 
 ## pair_eam_opt.cpp  error
 
