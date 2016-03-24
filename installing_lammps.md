@@ -20,14 +20,7 @@ Notes:
 2. `make no-lib` remove the packages than depend on third-party packages
 
 ## “Invalid ... style” (e.g. missing full atom style )
-
-[LAMMPS / Mailing Lists](https://sourceforge.net/p/lammps/mailman/message/34639586/)
->atom_style full is part of the MOLECULE package, which you didn't install.
-when you compile from the git repo, no packages are installed by default.
-
-After you execute `make yes-molecule`, you need to re-run `make mpi`.
-
-
+[12. Errors — LAMMPS documentation](http://lammps.sandia.gov/doc/Section_errors.html)
 >f you get an error like “Invalid ... style”, with ... being fix, compute, pair, etc, it means that you mistyped the style name or that the command is part of an optional package which was not compiled into your executable.
 
 You can run `/home/coiby/lammps/src/lmp_mpi -h` to get the list of available styles,
@@ -37,6 +30,15 @@ You can run `/home/coiby/lammps/src/lmp_mpi -h` to get the list of available sty
 atomic          body            charge          ellipsoid       hybrid          
 line            sphere          tri
 ```
+
+
+[LAMMPS / Mailing Lists](https://sourceforge.net/p/lammps/mailman/message/34639586/)
+>atom_style full is part of the MOLECULE package, which you didn't install.
+when you compile from the git repo, no packages are installed by default.
+
+After you execute `make yes-molecule`, you need to re-run `make mpi`.
+
+
 
 
 ## pair_eam_opt.cpp  error
