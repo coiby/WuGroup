@@ -27,6 +27,9 @@ when you compile from the git repo, no packages are installed by default.
 
 After you execute `make yes-molecule`, you need to re-run `make mpi`.
 
+
+>f you get an error like “Invalid ... style”, with ... being fix, compute, pair, etc, it means that you mistyped the style name or that the command is part of an optional package which was not compiled into your executable.
+
 You can run `/home/coiby/lammps/src/lmp_mpi -h` to get the list of available styles,
 ```
 * Atom styles:
