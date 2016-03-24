@@ -1,6 +1,12 @@
 # First Chapter
  
-# NSCC-GZ
+## NSCC-GZ
+
+### module
+
+`module avail`
+
+### VPN
 
 sudo apt-get install vpnc
 
@@ -15,6 +21,8 @@ Xauth password *mypassword*
 ```
 
 sudo vpnc-connect
+
+
 
 
 ## screen
