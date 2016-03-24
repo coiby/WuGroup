@@ -36,12 +36,7 @@ line            sphere          tri
 ## pair_eam_opt.cpp  error
 
 [Re: [lammps-users] Compiling errors - advice needed](http://lammps.sandia.gov/threads/msg48777.html)
->If you read the sections of different accelerator packages
-under doc/Section_accelerate.html, you will see that
-several of them (including USER-INTEL) require new
-compiler flags.  So it is best not to install those packages
-unless a) you intend to use them, and b) you read the
-associated doc pages that explain how to build with them.
+>If you read the sections of different accelerator packages under doc/Section_accelerate.html, you will see that several of them (including USER-INTEL) require new compiler flags.  So it is best not to install those packages unless a) you intend to use them, and b) you read the associated doc pages that explain how to build with them.
 
 ##  libraries: libimf.so: cannot open shared object file
 If you encounter this problem,
