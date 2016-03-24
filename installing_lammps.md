@@ -25,6 +25,8 @@ Notes:
 >atom_style full is part of the MOLECULE package, which you didn't install.
 when you compile from the git repo, no packages are installed by default.
 
+After you execute `make yes-molecule`, you need to re-run `make mpi`.
+
 You can run `/home/coiby/lammps/src/lmp_mpi -h` to get a list of atom styles,
 ```
 * Atom styles:
@@ -32,7 +34,7 @@ You can run `/home/coiby/lammps/src/lmp_mpi -h` to get a list of atom styles,
 atomic          body            charge          ellipsoid       hybrid          
 line            sphere          tri
 ```
-After you execute `make yes-molecule`, you need to re-run `make mpi`.
+
 
 ## pair_eam_opt.cpp  error
 
