@@ -6,6 +6,4 @@ Find number of CPUs
 Find number of logical CPUs
 `cat /proc/cpuinfo |grep "processor"|wc -l`
 
-Find the number of cores in a CPU
-
-`cat /proc/cpuinfo |grep "cores"|uniq` 
+Find the number of cores in a CPU `cat /proc/cpuinfo |grep "cores"|uniq` 
