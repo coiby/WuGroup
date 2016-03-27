@@ -4,6 +4,8 @@
 
 [SLURM资源管理系统使用入门](http://www.nscc-gz.cn/userfiles/files/[%E5%9F%BA%E9%87%91%E4%B8%93%E9%A1%B9%E6%95%99%E5%AD%A6%E8%B5%84%E6%96%99]-%E2%80%9C%E5%A4%A9%E6%B2%B3%E4%BA%8C%E5%8F%B7%E2%80%9D%E8%B5%84%E6%BA%90%E7%AE%A1%E7%90%86%E7%B3%BB%E7%BB%9F%E4%BD%BF%E7%94%A8%E5%85%A5%E9%97%A8.pdf)
 
+The correct ssh port is `23`. You can log in using port `22`, but the job will not be run.
+
 ### job script
 
 Data files should be put under ~/NFCC directory. (For details, check [基金专项教学视频]-使用"天河二号"已配置的软件计算](http://www.nscc-gz.cn/userfiles/files/[%E5%9F%BA%E9%87%91%E4%B8%93%E9%A1%B9%E6%95%99%E5%AD%A6%E8%A7%86%E9%A2%91]-%E4%BD%BF%E7%94%A8%E2%80%9C%E5%A4%A9%E6%B2%B3%E4%BA%8C%E5%8F%B7%E2%80%9D%E5%B7%B2%E9%85%8D%E7%BD%AE%E7%9A%84%E8%BD%AF%E4%BB%B6%E8%AE%A1%E7%AE%97%EF%BC%88%E4%BB%85%E4%BE%9B%E5%9F%BA%E9%87%91%E4%B8%93%E9%A1%B9%E7%94%A8%E6%88%B7%E4%BD%BF%E7%94%A8%EF%BC%89.flv) )
