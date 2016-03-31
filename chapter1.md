@@ -7,6 +7,13 @@
 The correct ssh port is `23`. You can still log in using port `22`, but the job will not run,
 >yhbatch: error: Batch job submission failed: Invalid partition name specified
 
+
+yhqueue
+
+yhqueue -s
+yhcontrol show steps [stepid]
+
+
 ### jobStep
 
 脚本中可通过yhrun加载计算任务
