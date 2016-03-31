@@ -10,7 +10,9 @@ The correct ssh port is `23`. You can still log in using port `22`, but the job 
 ### jobStep
 
 脚本中可通过yhrun加载计算任务
-– 一个作业可使用多个yhrun生成多个作业步
+- 一个作业可使用多个yhrun生成多个作业步
+- 也可以不包含yhrun命令,这样脚本只会在首节点运行
+
 
 
 ### job script
