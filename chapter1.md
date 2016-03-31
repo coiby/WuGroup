@@ -11,6 +11,7 @@ The correct ssh port is `23`. You can still log in using port `22`, but the job 
 yhqueue
 
 yhqueue -s
+yhcontrol show job [jobid]
 yhcontrol show steps [stepid]
 
 
