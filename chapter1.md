@@ -13,7 +13,11 @@ The correct ssh port is `23`. You can still log in using port `22`, but the job 
 - 一个作业可使用多个yhrun生成多个作业步
 - 也可以不包含yhrun命令,这样脚本只会在首节点运行
 
+### Parameters
 
+-N --nodes, 节点数量 (如未指定,则根据其他需求,分配足够的节点)
+-n --ntasks, 作业要加载的任务数
+-c --cpus-per-task, 每个任务需要的处理器数
 
 ### job script
 
