@@ -1,6 +1,6 @@
 # Bag of Tasks
 
-
+How to parallize the jobs?
 
 **Choosing parameters** : To control the number of processors in each group, command line switches: `-nimage`, `-npools`, `-nband`, `-ntg`, `-northo` or `-ndiag` are used. As an example consider the following command line:
 ```bash
