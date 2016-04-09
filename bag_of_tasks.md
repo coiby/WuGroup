@@ -1,10 +1,8 @@
 # Bag of Tasks
 
 
-**Choosing parameters** : To control the number of processors in each group, command line
 
-switches: -nimage, -npools, -nband, -ntg, -northo or -ndiag are used. As an example
-consider the following command line:
+**Choosing parameters** : To control the number of processors in each group, command line switches: `-nimage`, `-npools`, `-nband`, `-ntg`, `-northo` or `-ndiag` are used. As an example consider the following command line:
 ```bash
 mpirun -np 4096 ./neb.x -nimage 8 -npool 2 -ntg 4 -ndiag 144 -input my.input
 ```
