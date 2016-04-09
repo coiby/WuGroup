@@ -1,4 +1,5 @@
 # Bag of Tasks
+/home/coiby/Desktop/DFT/softwares/QE/
 
 How to parallize the jobs?
 
