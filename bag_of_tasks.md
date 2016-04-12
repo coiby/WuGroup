@@ -1,4 +1,6 @@
 # Bag of Tasks
+/home/coiby/CF/MgAl2O4/freq/{6ph1.pbs,6ph2.pbs}
+
 
 /home/coiby/Desktop/DFT/bag-of-tasks
 
