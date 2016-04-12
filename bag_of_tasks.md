@@ -1,6 +1,6 @@
 # Bag of Tasks
 
-[Quick tip: Choosing how to parallelize your jobs | hjklol.mit.edu](http://hjklol.mit.edu/content/quick-tip-choosing-how-parallelize-your-jobs)
+[Quick tip: Choosing how to parallelize your jobs | hjklol.mit.edu](http://hjklol.mit.edu/content/quick-tip-choosing-how-parallelize-your-jobs) (use keyword `pw.x npool`, you will find more results)
 
 /home/coiby/CF/MgAl2O4/freq/{6ph1.pbs,6ph2.pbs}
 
