@@ -4,6 +4,7 @@
 
 /home/coiby/CF/MgAl2O4/freq/{6ph1.pbs,6ph2.pbs}
 
+wzq:/home/coiby/Mg_Ca_31_1/{ph_part2,ph_part3}
 
 /home/coiby/Desktop/DFT/bag-of-tasks
 
