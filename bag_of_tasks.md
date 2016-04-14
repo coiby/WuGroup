@@ -6,6 +6,8 @@
 
 wzq:/home/coiby/Mg_Ca_31_1/{ph_part2,ph_part3}
 
+q点并行，振动模式(mode)并行
+
 /home/coiby/Desktop/DFT/bag-of-tasks
 
 /home/coiby/Desktop/DFT/softwares/QE/
