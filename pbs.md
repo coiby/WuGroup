@@ -50,8 +50,7 @@ Line 1 indicates this script is not other shells but bash shell.
 
 Line 2-6 specify the job name, nodes, error file, output file, destination respectively.
 
-The rest lines mainly give the input for Quantum Espresso. For details
-please check input description of [Quantum Espresso](Quantum Espresso "wikilink").
+The rest lines mainly give the input for Quantum Espresso. For details please check input description of [Quantum Espresso](Quantum Espresso "wikilink").
 
 The last line tells job system to use MPI to execute pw.x(part of Quantum Espresso).
 
