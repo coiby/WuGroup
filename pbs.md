@@ -44,20 +44,16 @@ qsub
 
 ## An Example of PBS Script
 
-The following example is a .pbs for scf calculation of
-Pervosikie-MgSiO3.
+The following example is a .pbs for scf calculation of Pervosikie-MgSiO3.
 
 Line 1 indicates this script is not other shells but bash shell.
 
-Line 2-6 specify the job name, nodes, error file, output file,
-destination respectively.
+Line 2-6 specify the job name, nodes, error file, output file, destination respectively.
 
 The rest lines mainly give the input for Quantum Espresso. For details
-please check input description of [Quantum
-Espresso](Quantum Espresso "wikilink").
+please check input description of [Quantum Espresso](Quantum Espresso "wikilink").
 
-The last line tells job system to use MPI to execute pw.x(part of
-Quantum Espresso).
+The last line tells job system to use MPI to execute pw.x(part of Quantum Espresso).
 
 ```bash
 #!/bin/bash
