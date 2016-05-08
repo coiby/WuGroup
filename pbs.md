@@ -159,7 +159,7 @@ mpirun -np 8 pw.x <  P0.scf.in > P0.scf.out
 rm -rf $toutput
 ```
 
-There are six nodes on our cluster, node01(60 cores), node02(64 cores), node03-6(32 cores).
+There are six nodes on our cluster, node01(64 cores), node02(64 cores), node03-6(32 cores).
 
 ## Useful Commands
 
