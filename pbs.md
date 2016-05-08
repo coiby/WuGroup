@@ -179,9 +179,7 @@ There are six nodes on our cluster, node01(64 cores), node02(64 cores), node03-6
 
 ## Important Notes
 
-​1. Node05,06 (128+64= 192G) have much larger memory than node03,04
-(128G), if you have memory-consuming jobs, please submit them to
-node05,06.
+​1. Node05,06 (128+64= 192G) have much larger memory than node03,04 (128G), if you have memory-consuming jobs, please submit them to node05,06.
 
 ​2. Avoiding writing temp data to disk. But output temp data only to
 memory if possible. To learn more about **disk\_io**, please check
