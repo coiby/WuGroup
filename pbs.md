@@ -54,7 +54,7 @@ The rest lines mainly give the input for Quantum Espresso. For details please ch
 
 The last line tells job system to use MPI to execute pw.x(part of Quantum Espresso).
 
-```bash
+```sh
 #!/bin/bash
 #PBS -N MgSiO3-scf-phon                          #<- job name is MgSiO3-scf-phon which will be shown in the queue if you use qstat
 #PBS -l nodes=node03:ppn=4          #<- use node03 (4 cores in total).
@@ -63,7 +63,7 @@ The last line tells job system to use MPI to execute pw.x(part of Quantum Espres
 #PBS -o OUT                                      #<- output will be written to file 'OUT'
 #PBS -q gentai                                   #<- use “gentai” queue (there only one queue on our cluster)
                                                  #<- your commands start here
-toutput=/tmp${PBS_O_WORKDIR#/home}/$PBS_JOBID
+toutput=/tmp${PBS_O_WORKDIR#/home}/$PBS_JOBID #temporary data saved to the disk of the computing node
 echo $toutput
 mkdir -p $toutput
 
