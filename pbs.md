@@ -199,7 +199,7 @@ Parallelization levels** in *User’s Guide for Quantum ESPRESSO.*
 
 ## Q&A
 
-1.  What can do if the job is in the state "E" and also can't be
+### 1.  What can do if the job is in the state "E" and also can't be
     deleted?
 
 `qdel: Request invalid for state of job MSG=invalid state for job - EXITING`
