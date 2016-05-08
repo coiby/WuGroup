@@ -1,18 +1,12 @@
 # PBS
 
-Portable Batch System (PBS) is the name of computer software that
-performs job scheduling. Its primary task is to allocate computational
-tasks, i.e., batch jobs, among the available computing resources.[^1]
+Portable Batch System (PBS) is the name of computer software that performs job scheduling. Its primary task is to allocate computational tasks, i.e., batch jobs, among the available computing resources.[^1]
 
 ## qsub Synopsis[^2]
 
-qsub is the command used for job submission to the cluster. It takes
-several command line arguments and can also use special directives found
-in the submission scripts or command file. Several of the most widely
-used arguments are described in detail below(you can use **man qsub** to
-get more info).
+qsub is the command used for job submission to the cluster. It takes several command line arguments and can also use special directives found in the submission scripts or command file. Several of the most widely used arguments are described in detail below(you can use **man qsub** to get more info).
 
-~~~~ {.html4strict}
+```
 qsub
 [-a date_time]
 [-A account_string]
@@ -46,7 +40,7 @@ qsub
 [-W additional_attributes]
 [-X]
 [-z]
-~~~~
+```
 
 ## An Example of PBS Script
 
