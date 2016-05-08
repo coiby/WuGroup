@@ -65,7 +65,7 @@ Espresso](Quantum Espresso "wikilink").
 The last line tells job system to use MPI to execute pw.x(part of
 Quantum Espresso).
 
-~~~~ {.bash .numberLines}
+```bash
 #!/bin/bash
 #PBS -N MgSiO3-scf-phon                          #<- job name is MgSiO3-scf-phon which will be shown in the queue if you use qstat
 #PBS -l nodes=node03:ppn=4          #<- use node03 (4 cores in total).
@@ -157,7 +157,7 @@ K_POINTS {automatic}
 EOF
 mpirun -np 8 pw.x <  P0.scf.in > P0.scf.out
 rm -rf $toutput
-~~~~
+```
 
 There are six nodes on our cluster, node01(60 cores), node02(64 cores),
 node03-6(32 cores).
