@@ -179,19 +179,13 @@ There are six nodes on our cluster, node01(64 cores), node02(64 cores), node03-6
 
 ## Important Notes
 
-​1. Node05,06 (128+64= 192G) have much larger memory than node03,04 (128G), if you have memory-consuming jobs, please submit them to node05,06.
+​1. Node05,06 (128+64= 192G) have much larger memory than node03,04 (128G), if you have memory-consuming jobs, please submit them to node05, 06.
 
-​2. Avoiding writing temp data to disk. But output temp data only to
-memory if possible. To learn more about **disk\_io**, please check
-**3.3.1 Understanding parallel I/O** in *User’s Guide for Quantum
-ESPRESSO.*
+​2. Avoiding writing temp data to disk. But output temp data only to memory if possible. To learn more about **disk\_io**, please check **3.3.1 Understanding parallel I/O** in *User’s Guide for Quantum ESPRESSO.*
 
 `disk_io='none'`
 
-​3. Choose proper parameter value for parallelization level, for
-example, you may choose less CPU cores (-npools, -nk) to reduce
-communication costs between cores. For details, check **3.3
-Parallelization levels** in *User’s Guide for Quantum ESPRESSO.*
+​3. Choose proper parameter value for parallelization level, for example, you may choose less CPU cores (-npools, -nk) to reduce communication costs between cores. For details, check **3.3 Parallelization levels** in *User’s Guide for Quantum ESPRESSO.*
 
 `mpirun -np 4096 ./neb.x -ni 8 -nk 2 -nt 4 -nd 144 -i my.input`
 
