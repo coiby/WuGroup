@@ -208,8 +208,7 @@ The administrator can forcibly purge the job
 `qdel -p jobid`
 
 ## References
-
-<references />
+ 
 
 [^1]: [Wikipedia - *Portable Batch
     System*](https://en.wikipedia.org/wiki/Portable_Batch_System)
