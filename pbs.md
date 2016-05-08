@@ -210,8 +210,7 @@ The administrator can forcibly purge the job
 ## References
  
 
-[^1]: [Wikipedia - *Portable Batch
-    System*](https://en.wikipedia.org/wiki/Portable_Batch_System)
+[^1]: [Wikipedia - *Portable Batch System*](https://en.wikipedia.org/wiki/Portable_Batch_System)
 
 [^2]: [Tutorial - Submitting a job using qsub - High Performance
     Computing at NYU - NYU
