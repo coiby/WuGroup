@@ -1,5 +1,7 @@
 # SCC-USTC
 
+For more details, download 曙光TC4600百万亿次超级计算系统使用指南 from http://scc.ustc.edu.cn/zlsc/
+
 bsub < job.lsf
 
 job.lsf
