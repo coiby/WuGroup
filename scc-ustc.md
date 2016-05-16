@@ -1,6 +1,8 @@
 # SCC-USTC
 
-bsub <
+bsub < job.lsf
+
+job.lsf
 ```sh
 #!/bin/sh
 #BSUB -q wuzq
