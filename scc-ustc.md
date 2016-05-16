@@ -1,4 +1,6 @@
 # SCC-USTC
+
+bsub <
 ```sh
 #!/bin/sh
 #BSUB -q wuzq
