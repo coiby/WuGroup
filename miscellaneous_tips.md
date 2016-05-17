@@ -1,5 +1,5 @@
 # Miscellaneous Tips
 
-## Moniter processes by a user
+## Moniter processes owned by a specified user
 
 top -b -u [username] 
