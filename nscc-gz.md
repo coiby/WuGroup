@@ -24,15 +24,16 @@ Notes:
 2. If more than 60 nodes (> 1440 cores) are required, submit the job to the partitions BIGJOB*(BIGJOB1/BIGJOB2...)
 3. The correct ssh port is `23`. You can still log in using port `22`, but the job will not run,
 >yhbatch: error: Batch job submission failed: Invalid partition name specified
+4. Fore more, check [SLURM资源管理系统使用入门](http://www.nscc-gz.cn/userfiles/files/[%E5%9F%BA%E9%87%91%E4%B8%93%E9%A1%B9%E6%95%99%E5%AD%A6%E8%B5%84%E6%96%99]-%E2%80%9C%E5%A4%A9%E6%B2%B3%E4%BA%8C%E5%8F%B7%E2%80%9D%E8%B5%84%E6%BA%90%E7%AE%A1%E7%90%86%E7%B3%BB%E7%BB%9F%E4%BD%BF%E7%94%A8%E5%85%A5%E9%97%A8.pdf)
 
+## Useful Commands
+1. `yhqueue` show running jobs
 
-yhqueue
+2. `yhqueue -s` show running steps
 
-yhqueue -s
+3. `yhcontrol show job [jobid]` show a specified job by JobID
 
-yhcontrol show job [jobid]
-
-yhcontrol show steps [stepid]
+4. `yhcontrol show steps [stepid]` show a specified job step by StepID
 
 
 ### jobStep
