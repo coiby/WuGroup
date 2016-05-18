@@ -1,11 +1,10 @@
 # NSCC-GZ
 1. load the required module by `module load /Quantum_Espresso/5.3.0_MPI`
 2. Submit the job script, `yhbatch job.sh`, an example job script
-
-```
+```sh
 #!/bin/sh
-#SBATCH -N 16 -t 100 -n 16 -c 4
-yhrun -N $SLURM_NNODES -n $SLURM_NTASKS ph.x  -nimage $SLURM_NNODES -npool 4
+
+#SBATCH -N 64 -n 1536 -p BIGJOB2
 yhrun -n 16  pw.x < P6$pres.vc.in > P63$pres.vc.out
 ```
 
