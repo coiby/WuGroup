@@ -17,3 +17,39 @@ different self-consistent or linear-response calculation, loosely coupled to oth
 
 *Note however that not all parallelization levels are implemented in all codes!*
 
+
+## Non-blocking processes
+
+To run multiple jobs in one job script, the processes have to be started in a non-blocking way. In Renata's bag-of-tasks, this is implemented by using Python's `subprocess` module which allow you to spawn new processes and manage them
+>The `subprocess` module allows you to spawn new processes, connect to their input/output/error pipes, and obtain their return codes.  
+
+Another way to implement non-blocking processes natively in shell is to run the processes in the background,
+- `jobs -p`
+- `program &`
+
+A complete example
+```sh
+./1.sh &
+./2.sh &
+jobs -p
+wait
+#1.sh
+#!/bin/bash
+echo "I'm #1"
+sleep 2
+echo "#1 finished"
+#2.sh
+echo "I'm #2"
+sleep 2
+echo "#2 finished"
+```
+
+[17.1. subprocess — Subprocess management — Python 2.7.11 documentation](https://docs.python.org/2/library/subprocess.html)
+
+[bash - How to get list of all child process spawned by a script - Super User](https://superuser.com/questions/641967/how-to-get-list-of-all-child-process-spawned-by-a-script)
+
+[linux - how to execute programs in non-blocking way from scripts - Stack Overflow](https://stackoverflow.com/questions/6665604/how-to-execute-programs-in-non-blocking-way-from-scripts)
+
+[unix - Bash & blocking processes - Server Fault](https://serverfault.com/questions/101278/bash-blocking-processes)
+
+[job control - Non-blocking bash command - Unix & Linux Stack Exchange](https://unix.stackexchange.com/questions/15985/non-blocking-bash-command)
