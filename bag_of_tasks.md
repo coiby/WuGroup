@@ -1,6 +1,6 @@
 # Bag of Tasks
 
-Since on the level of image, 
+Since on the levels of image and pool, 
 
 ## Parallelization levels in Quantum ESPRESSO
 
