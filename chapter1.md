@@ -30,9 +30,9 @@ yhcontrol show steps [stepid]
 
 -N --nodes, 节点数量 (如未指定,则根据其他需求,分配足够的节点)
 
--n --ntasks, 作业要加载的任务数
+-n --ntasks, 作业要加载的任务数 (进程数）
 
--c --cpus-per-task, 每个任务需要的处理器数
+-c --cpus-per-task, 每个任务需要的处理器数 （线程数）
 
 -t --time, 运行时间 (超出时间限制的作业将被终止)
 
