@@ -54,8 +54,6 @@ Notes:
 
  
 
-
-
 ### Available modules
 
 Run `module avail`
