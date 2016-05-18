@@ -2,10 +2,6 @@
  
  ~/Desktop/DFT/bag-of-tasks
  
- 
-
-
-
 
 ## screen
 
