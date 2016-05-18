@@ -1,5 +1,5 @@
 # NSCC-GZ
-1. load the required module by `module load Quantum_Espresso/5.2.0_MPI`
+1. load the required module by `module load /Quantum_Espresso/5.3.0_MPI`
 2. 
 job.sh
 
