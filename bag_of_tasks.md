@@ -4,7 +4,7 @@ Since on the levels of image (irreducible representations for q-point) and pool 
 >In “image” parallelization, processors can be divided into different “images”, corresponding to one (or more than one) “irrep” or q vectors. Images are loosely coupled: processors communicate between different images only once in a while, so image parallelization is suitable for cheap communication hardware (e.g. Gigabit Ethernet). Image parallelization is activated by specifying the option -nimage N to ph.x. Inside an image, PW and k-point parallelization can be performed.
 
 The controlling parameters for image and pool are `-nimage` and `-npool`,
-```bash
+```sh
 mpirun -np NUMBER_OF_CORES ph.x -nimage NUMBER_OF_NODES -npool 4 ...
 ```
 
