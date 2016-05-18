@@ -1,7 +1,7 @@
 # Summary
 
 * [Introduction](README.md)
-* [First Chapter](chapter1.md)
+* [Instructions for Cluster Users](chapter1.md)
    * [Bag of Tasks](bag_of_tasks.md)
    * [PBS](pbs.md)
    * [SCC-USTC](scc-ustc.md)
