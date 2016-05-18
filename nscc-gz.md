@@ -3,7 +3,6 @@
 2. Submit the job script, `yhbatch job.sh` 
 
 
-
 Notes:
 1. Data files should be put under ~/NFCC directory. (For details, check [基金专项教学视频]-使用"天河二号"已配置的软件计算](http://www.nscc-gz.cn/userfiles/files/[%E5%9F%BA%E9%87%91%E4%B8%93%E9%A1%B9%E6%95%99%E5%AD%A6%E8%A7%86%E9%A2%91]-%E4%BD%BF%E7%94%A8%E2%80%9C%E5%A4%A9%E6%B2%B3%E4%BA%8C%E5%8F%B7%E2%80%9D%E5%B7%B2%E9%85%8D%E7%BD%AE%E7%9A%84%E8%BD%AF%E4%BB%B6%E8%AE%A1%E7%AE%97%EF%BC%88%E4%BB%85%E4%BE%9B%E5%9F%BA%E9%87%91%E4%B8%93%E9%A1%B9%E7%94%A8%E6%88%B7%E4%BD%BF%E7%94%A8%EF%BC%89.flv) )
 2. If more than 60 nodes (> 1440 cores) are required, submit the job to the partitions BIGJOB*(BIGJOB1/BIGJOB2...)
@@ -18,8 +17,8 @@ Notes:
 #SBATCH -N 64 -n 1536 -p BIGJOB2
 ...
 yhrun -n 24  pw.x -npool 4 < pw.in > pw.out
-
 ...
+yhrun -N $SLURM_NNODES -n $SLURM_NTASKS ph.x  -nimage $SLURM_NNODES -npool 4 < MgAl2O4_ph_Pt2$pres.in > MgAl2O4_ph_Pt3$pres.ph.out
 
 ```
 
