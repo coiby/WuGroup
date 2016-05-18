@@ -1,7 +1,6 @@
 # NSCC-GZ
 1. load the required module by `module load /Quantum_Espresso/5.3.0_MPI`
-2. 
-job.sh
+2. Submit the job script, `yhbatch job.sh`, an example job script
 
 ```
 #!/bin/sh
