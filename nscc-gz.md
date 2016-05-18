@@ -5,16 +5,7 @@
 ```
 #!/bin/sh
 #SBATCH -N 16 -t 100 -n 16 -c 4
-
-yhrun -n 16 hostname
-```
-
-yhbatch job.sh
-
-```
-#!/bin/sh
-#SBATCH -N 16 -t 100 -n 16 -c 4
-module load Quantum_Espresso/5.2.0_MPI
+yhrun -N $SLURM_NNODES -n $SLURM_NTASKS ph.x  -nimage $SLURM_NNODES -npool 4
 yhrun -n 16  pw.x < P6$pres.vc.in > P63$pres.vc.out
 ```
 
