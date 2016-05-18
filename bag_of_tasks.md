@@ -1,6 +1,10 @@
 # Bag of Tasks
 
 Since on the levels of image (irreducible representations) and pool (k-point), the communication cost is low. 
+>In “image” parallelization, processors can be divided into different “images”, corresponding to one (or more than one) “irrep” or q vectors. Images are loosely coupled: processors communicate between different images only once in a while, so image parallelization is suitable for cheap communication hardware (e.g. Gigabit Ethernet). Image parallelization is activated by specifying the option -nimage N to ph.x. Inside an image, PW and k-point parallelization can be performed: for instance,
+```bash
+mpirun -np 64 ph.x -nimage 8 -npool 2 ...
+```
 
 ## Parallelization levels in Quantum ESPRESSO
 
