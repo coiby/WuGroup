@@ -69,7 +69,7 @@ BEAST/1.8.2                        Quantum_Espresso/5.2.0_MPI         gcc/5.3.0 
 BEAST/2.3.1                        R/3.1.2                            gdk-pixbuf/2.31.4                  netcdf/4.1.3/02-CF-14-para
 ```
 
-## Resource Usage
+## Resource Consumption
 
 Visit https://172.16.22.11:10021/index/.
 
