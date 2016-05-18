@@ -57,8 +57,7 @@ module load Quantum_Espresso/5.2.0_MPI
 yhrun -n 16  pw.x < P6$pres.vc.in > P63$pres.vc.out
 ```
 
-注意:如果需要提交 60 结点规模以上的作业(超过 1440 核的作业),请提交至 BIGJOB*
-分区(BIGJOB1/BIGJOB2...)
+注意:如果需要提交 60 结点规模以上的作业(超过 1440 核的作业),请提交至 BIGJOB*分区(BIGJOB1/BIGJOB2...)
 
 ### module
 
