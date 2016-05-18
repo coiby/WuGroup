@@ -15,8 +15,8 @@ Notes:
 
 ```sh
 #!/bin/sh
-
 #SBATCH -N 64 -n 1536 -p BIGJOB2
+
 yhrun -n 16  pw.x < P6$pres.vc.in > P63$pres.vc.out
 ```
 
