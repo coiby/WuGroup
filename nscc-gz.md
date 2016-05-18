@@ -1,12 +1,10 @@
 # NSCC-GZ
-
-
-
+1. load the required module by `module load Quantum_Espresso/5.2.0_MPI`
 job.sh
 ```
 #!/bin/sh
 #SBATCH -N 16 -t 100 -n 16 -c 4
-module load Quantum_Espresso/5.2.0_MPI
+
 yhrun -n 16 hostname
 ```
 
@@ -56,7 +54,7 @@ Notes:
 
 ### Available modules
 
-Run `module avail`
+Run `module avail` 
 
 ```
 ------------------------------------------- /WORK/app/modulefiles --------------------------------------------------------------
