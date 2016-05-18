@@ -1,6 +1,6 @@
 # Bag of Tasks
 
-Since on the levels of image and pool, 
+Since on the levels of image (irreducible representations) and pool (k-point), the communication cost is low. 
 
 ## Parallelization levels in Quantum ESPRESSO
 
