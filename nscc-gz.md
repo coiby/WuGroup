@@ -79,19 +79,7 @@ BEAST/2.3.1                        R/3.1.2                            gdk-pixbuf
 
 Visit https://172.16.22.11:10021/index/.
 
-### VPN
+ 
 
-sudo apt-get install vpnc
 
-/etc/vpnc/default.conf
-
-```
-IPSec gateway *gateway.to.use*
-IPSec ID *groupname*
-IPSec secret *passwordforgroup*
-Xauth username *myusername*
-Xauth password *mypassword*
-```
-
-sudo vpnc-connect
 
