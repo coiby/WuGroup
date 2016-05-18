@@ -1,5 +1,7 @@
 # Bag of Tasks
 
+
+
 ## Parallelization levels in Quantum ESPRESSO
 
 ![Summary of parallelization levels in Quantum ESPRESSO, from Notes on parallel computing](Screenshot from 2016-04-25 18:31:55.png)
