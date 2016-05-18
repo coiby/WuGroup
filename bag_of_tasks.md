@@ -114,9 +114,9 @@ I should analyze MgAl2O4_ph_Pt30.ph.out, out.2_0, out.3_0
 
 ### file MgAl2O4.wfc not found
 
-Write to either a parallel file system (found only on expensive machines) or to local disks. In the latter case, check that all processors can access pseudo dir and outdir
+>Write to either a parallel file system (found only on expensive machines) or to local disks. In the latter case, check that all processors can access pseudo dir and outdir
 
-去掉了`reduce_io=.true.` 和 `recover=.true.`解决了这个问题 ；加了`reduce_io=.true.`去掉`recover=.true.`，又出现了这个问题
+It seems `recover=.true.` lead to this probem. Remove `recover=.true.` from ph.in
 
 vimdiff /HOME/nsfc2015_369/Fe7C3/freq/Fe7C3_phon_P0.pbs
 
