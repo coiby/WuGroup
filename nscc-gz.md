@@ -17,7 +17,8 @@ Notes:
 #!/bin/sh
 #SBATCH -N 64 -n 1536 -p BIGJOB2
 ...
-yhrun -n 16  pw.x < pw.in > pw.out
+yhrun -n 24  pw.x -npool 4 < pw.in > pw.out
+
 ...
 
 ```
