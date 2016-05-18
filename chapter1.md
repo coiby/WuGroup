@@ -2,7 +2,6 @@
  
  ~/Desktop/DFT/bag-of-tasks
  
-
 ## screen
 
 Manage multiple terminals.
