@@ -18,7 +18,7 @@ Notes:
 ...
 yhrun -n 24  pw.x -npool 4 < pw.in > pw.out
 ...
-yhrun -N $SLURM_NNODES -n $SLURM_NTASKS ph.x  -nimage $SLURM_NNODES -npool 4 < MgAl2O4_ph_Pt2$pres.in > MgAl2O4_ph_Pt3$pres.ph.out
+yhrun -N $SLURM_NNODES -n $SLURM_NTASKS ph.x  -nimage $SLURM_NNODES -npool 4 < ph.in > ph.out
 
 ```
 
