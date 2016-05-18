@@ -17,6 +17,23 @@ different self-consistent or linear-response calculation, loosely coupled to oth
 
 *Note however that not all parallelization levels are implemented in all codes!*
 
+## benchmark
+
+|  job | cores( nodes X per cores)|cpu time|wall time|calculation|note|
+|------|-------------|---------|--------|---------|-----------|-----|
+|1     |  4x24=96   |11h12m    |11h29m    |phonon     |-nimage 8,  |
+|2     |  4x24=96   |9h58m     |10h13m    |phonon     |-nimage 4 -npool 3, test 1|
+|3     |  8x24=192  |  4h59m   |5h 6m     |phonon     |test2, output=14G|
+|4     | 16x24=384  |          |          |phonon     |test3, output=30G|
+|4     | 16x24=384  |          |          |phonon     |test3, temp=~/NSCC, output=30G|
+|6     | 32x24=768  |          |          |phonon     |test4, output=142G|
+|7     | 16x24=384  |          |          |phonon     |test5, output=142G, nq 4x4x3,   Not diagonalizing because representation   74 is not done|
+|8     |  4x24=96   |  -       |   -      |phonon  -nimage 4 |wf_collect removed , output=19G|
+|9     |  8x24=192  |  3h 3m   | 3h 7m    |phonon  -nimage 16 |test6_no_wf_collect,wf_collect removed , output=25G|
+|10    |  32x24=768 | 1h38m    | 1h40m    |phonon  -nimage  32 |test7_no_wf_collect,wf_collect removed , output=48G|
+|11    |  48x24=1152| 1h 8m    | 1h 10m   |phonon  -nimage  48 -npool 3               |test8_no_wf_collect,wf_collect removed , output=70G|
+|12    |  48x24=1152| 1h 18m   | 1h 20m   |phonon  -nimage  48 -npool 3 -ntg 2 -ndiag 4|test9_no_wf_collect,wf_collect removed , output=70G|
+
 
 ## Non-blocking processes
 
