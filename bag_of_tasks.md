@@ -3,7 +3,7 @@
 ## Parallelization levels in Quantum ESPRESSO
 
 ![Summary of parallelization levels in Quantum ESPRESSO, from Notes on parallel computing](Screenshot from 2016-04-25 18:31:55.png)
- 
+ (Picture from )
 
 3.3 Parallelization levels, User’s Guide for Quantum ESPRESSO (v.5.3)
 - **world**: is the group of all processors (MPI COMM WORLD).
