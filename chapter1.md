@@ -57,6 +57,9 @@ module load Quantum_Espresso/5.2.0_MPI
 yhrun -n 16  pw.x < P6$pres.vc.in > P63$pres.vc.out
 ```
 
+注意:如果需要提交 60 结点规模以上的作业(超过 1440 核的作业),请提交至 BIGJOB*
+分区(BIGJOB1/BIGJOB2...)
+
 ### module
 
 `module avail`
@@ -75,6 +78,7 @@ BEAST/1.8.1                        Quantum_Espresso/5.1.2_MPI_ALL     gcc/5.2.0 
 BEAST/1.8.2                        Quantum_Espresso/5.2.0_MPI         gcc/5.3.0                          netcdf/4.1.3/01-CF-13
 BEAST/2.3.1                        R/3.1.2                            gdk-pixbuf/2.31.4                  netcdf/4.1.3/02-CF-14-para
 ```
+
 
 ### VPN
 
