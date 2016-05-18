@@ -28,7 +28,7 @@ yhcontrol show steps [stepid]
 
 -n --ntasks, 作业要加载的任务数 (进程数）
 
--c --cpus-per-task, 每个任务需要的处理器数 （线程数）
+-c --cpus-per-task, 每个任务需要的处理器数（线程数）
 
 -t --time, 运行时间 (超出时间限制的作业将被终止)
 
