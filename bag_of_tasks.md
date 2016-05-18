@@ -104,7 +104,7 @@ forrtl: severe (67): input statement requires too much data, unit 99, file /HOME
 
 ### pwscf Not diagonalizing because representation xx is not done
 
-Pwscf will not abort due to this. It may crash due to I/O problem
+Pwscf will not abort due to this. It may crash due to I/O problem. Check the job log to find out the reason.
 
 
 ### file MgAl2O4.wfc not found
