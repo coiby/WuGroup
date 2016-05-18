@@ -1,27 +1,18 @@
 # Bag of Tasks
 
-[Quick tip: Choosing how to parallelize your jobs | hjklol.mit.edu](http://hjklol.mit.edu/content/quick-tip-choosing-how-parallelize-your-jobs) (use keyword `pw.x npool`, you will find more results)
+## Parallelization levels in Quantum ESPRESSO
 
-/home/coiby/CF/MgAl2O4/freq/{6ph1.pbs,6ph2.pbs}
+![Summary of parallelization levels in Quantum ESPRESSO, from Notes on parallel computing](Screenshot from 2016-04-25 18:31:55.png)
 
-wzq:/home/coiby/Mg_Ca_31_1/{ph_part2,ph_part3}
+3.3 Parallelization levels, User’s Guide for Quantum ESPRESSO (v.5.3)
+- **world**: is the group of all processors (MPI COMM WORLD).
+- **images**: Processors can then be divided into different ”images”, each corresponding to a
+different self-consistent or linear-response calculation, loosely coupled to others.
+- **pools**: each image can be subpartitioned into ”pools”, each taking care of a group of k-points.
+- **bands**: each pool is subpartitioned into ”band groups”, each taking care of a group of Kohn-Sham orbitals (also called bands, or wavefunctions) (still experimental)
+- **PW**: orbitals in the PW basis set, as well as charges and density in either reciprocal or real space, are distributed across processors. This is usually referred to as ”PW parallelization”. All linear-algebra operations on array of PW / real-space grids are automatically and effectively parallelized. 3D FFT is used to transform electronic wave functions from reciprocal to real space and vice versa. The 3D FFT is parallelized by distributing planes of the 3D grid in real space to processors (in reciprocal space, it is columns of G-vectors that are distributed to processors).
+- **tasks**: In order to allow good parallelization of the 3D FFT when the number of processors exceeds the number of FFT planes, FFTs on Kohn-Sham states are redistributed to ”task” groups so that each group can process several wavefunctions at the same time.
+- **linear-algebra group**: A further level of parallelization, independent on PW or k-point parallelization, is the parallelization of subspace diagonalization / iterative orthonormalization. Both operations required the diagonalization of arrays whose dimension is the number of Kohn-Sham states (or a small multiple of it).
 
-q点并行，振动模式(mode)并行
+*Note however that not all parallelization levels are implemented in all codes!*
 
-/home/coiby/Desktop/DFT/bag-of-tasks
-
-/home/coiby/Desktop/DFT/softwares/QE/
-
-How to parallize the jobs?
-
-**Choosing parameters** : To control the number of processors in each group, command line switches: `-nimage`, `-npools`, `-nband`, `-ntg`, `-northo` or `-ndiag` are used. As an example consider the following command line:
-```bash
-mpirun -np 4096 ./neb.x -nimage 8 -npool 2 -ntg 4 -ndiag 144 -input my.input
-```
-This executes a NEB calculation on 4096 processors, 8 images (points in the configuration space in this case) at the same time, each of which is distributed across 512 processors. k-points are distributed across 2 pools of 256 processors each, 3D FFT is performed using 4 task groups (64 processors each, so the 3D real-space grid is cut into 64 slices), and the diagonalization of the subspace Hamiltonian is distributed to a square grid of 144 processors (12x12)
-
-
-In “image” parallelization, processors can be divided into different “images”, corresponding to one (or more than one) “irrep” or q vectors. Images are loosely coupled: processors communicate between different images only once in a while, so image parallelization is suitable for cheap communication hardware (e.g. Gigabit Ethernet). Image parallelization is activated by specifying the option -nimage N to ph.x. Inside an image, PW and k-point parallelization can be performed: for instance,
-```bash
-mpirun -np 64 ph.x -nimage 8 -npool 2 ...
-```
