@@ -106,11 +106,6 @@ forrtl: severe (67): input statement requires too much data, unit 99, file /HOME
 
 Pwscf will not abort due to this. It may crash due to I/O problem
 
-### ssh computing
-
-切换到计算节点，8个节点，每个节点只有3个ph线程
-
-I should analyze MgAl2O4_ph_Pt30.ph.out, out.2_0, out.3_0
 
 ### file MgAl2O4.wfc not found
 
