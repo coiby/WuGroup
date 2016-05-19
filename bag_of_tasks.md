@@ -7,7 +7,7 @@ Since on the levels of image (irreducible representations for q-point) and pool 
 ```sh
 mpirun -np NUMBER_OF_CORES ph.x -nimage NUMBER_OF_NODES -npool 4 ...
 ```
-
+2. Don't use `wf_collect`. 
 
 ## Parallelization levels in Quantum ESPRESSO
 
