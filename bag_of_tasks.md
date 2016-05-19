@@ -1,7 +1,7 @@
 # Bag of Tasks
 
-Since on the levels of image (irreducible representations for q-point) and pool (k-point), the communication cost is low. We can use many nodes as possible as long as I/O limit is not reached.
->In “image” parallelization, processors can be divided into different “images”, corresponding to one (or more than one) “irrep” or q vectors. Images are loosely coupled: processors communicate between different images only once in a while, so image parallelization is suitable for cheap communication hardware (e.g. Gigabit Ethernet). Image parallelization is activated by specifying the option -nimage N to ph.x. Inside an image, PW and k-point parallelization can be performed.
+Since on the levels of image (irreducible representations for q-point) and pool (k-point), the communication cost is low. We can use as many nodes as possible as long as I/O limit is not reached.
+>In “image” parallelization, processors can be divided into different “images”, corresponding to one (or more than one) “irrep” or q vectors. Images are loosely coupled: processors communicate between different images only once in a while, so image parallelization is suitable for cheap communication hardware (e.g. Gigabit Ethernet). Image parallelization is activated by specifying the option -nimage N to ph.x. Inside an image, PW and k-point parallelization can be performed. — User’s Guide for Quantum ESPRESSO
 
 The controlling parameters for image and pool are `-nimage` and `-npool`,
 ```sh
