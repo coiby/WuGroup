@@ -8,7 +8,7 @@ Since on the levels of image (irreducible representations for q-point) and pool 
 mpirun -np NUMBER_OF_CORES ph.x -nimage NUMBER_OF_NODES -npool 4 ...
 ```
 2. make sure `ph.x` has the same amount of processes per image as `pw.x`. Thus `wf_collect` will not be needed which will largely reduce I/O.
-3.  
+3. You can also use `reduce_io` to reduce I/O.
 
 ## Parallelization levels in Quantum ESPRESSO
 
