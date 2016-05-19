@@ -25,7 +25,7 @@ different self-consistent or linear-response calculation, loosely coupled to oth
 
 *Note however that not all parallelization levels are implemented in all codes!*
 
-## benchmark
+## Benchmark
 
 |  job | cores( nodes X per cores)|cpu time|wall time|calculation|note|
 |------|-------------|---------|--------|---------|-----------|-----|
