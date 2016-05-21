@@ -1,5 +1,5 @@
 # VPN
-1. Install the VPN package, take Ubuntu as the example
+1. Install the VPN package, take Ubuntu as an example
 ```sh
 sudo apt-get install vpnc
 ```
