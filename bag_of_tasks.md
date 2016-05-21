@@ -50,7 +50,7 @@ different self-consistent or linear-response calculation, loosely coupled to oth
 To run multiple jobs in one job script, the processes have to be started in a non-blocking way. In Renata's bag-of-tasks, this is implemented by using Python's `subprocess` module which allow you to spawn new processes and manage them
 >The `subprocess` module allows you to spawn new processes, connect to their input/output/error pipes, and obtain their return codes.  
 
-Another way to implement non-blocking processes natively in shell is to run the processes in the background ([Subshells](http://www.tldp.org/LDP/abs/html/subshells.html#PARALLEL-PROCESSES)),
+Another way to implement non-blocking processes natively in shell is to run the processes in the background i.e. to use [Subshells](http://www.tldp.org/LDP/abs/html/subshells.html#PARALLEL-PROCESSES),
 - `jobs -p`
 - `program &`
 
