@@ -31,6 +31,12 @@ top -b -p[PID] -d[INTERVAL] -n[CYCLEs]
 
 ## npool for ph.x
 
+| ID| Time | npool |
+| -- | -- | -- |
+| 1 | 1h56m | 4 |
+| 2 | 3h50m | 4 |
+| 2 | 4h15m | 8 |
+
 
 
 ```sh
