@@ -31,9 +31,11 @@ top -b -p[PID] -d[INTERVAL] -n[CYCLEs]
 
 ## npool for vc-relax calculation on own cluster
 
+~/home/coiby/flops/vc_k4
 
 ## npool for Phonon calculation on own cluster
 
+~//home/coiby/flops/vc_k4
 
 Based on the following table, npool=4 should be chosen for calculations running on our own [cluster](pbs.md).
 
