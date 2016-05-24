@@ -7,6 +7,7 @@ npool=1,2,4
 
 [Perf -- Linux下的系统性能调优工具，第 1 部分](https://www.ibm.com/developerworks/cn/linux/l-cn-perf1/)
 
+[Tutorial - Perf Wiki](https://perf.wiki.kernel.org/index.php/Tutorial)
 
 [andikleen/pmu-tools: Intel PMU profiling tools](https://github.com/andikleen/pmu-tools)
 - [The overhead of profiling using PMU hardware counters](http://openlab.web.cern.ch/sites/openlab.web.cern.ch/files/technical_documents/TheOverheadOfProfilingUsingPMUhardwareCounters.pdf)
