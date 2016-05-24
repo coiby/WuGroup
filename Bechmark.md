@@ -31,11 +31,11 @@ top -b -p[PID] -d[INTERVAL] -n[CYCLEs]
 
 ## npool for ph.x
 
-| ID| Time | npool |
+| ID| ph time|scf time| npool |
 | -- | -- | -- |
-| 1 | 1h56m | 4 |
-| 2 | 3h50m | 4 |
-| 2 | 4h15m | 8 |
+| 1 | 1h56m |2m12.63s| 4 |
+| 2 | 3h50m |3m37.29s| 4 |
+| 2 | 4h15m |3m 5.78s| 8 |
 
 
 Testcase
