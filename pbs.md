@@ -64,7 +64,7 @@ The last line tells job system to use MPI to execute pw.x(part of Quantum Espres
 #PBS -q gentai                                   #<- use “gentai” queue (there only one queue on our cluster)
                                                  #<- your commands start here
 toutput=/tmp${PBS_O_WORKDIR#/home}/$PBS_JOBID #temporary data saved to the disk of the computing node
-echo $toutput
+ 
 mkdir -p $toutput
 
 cd  $PBS_O_WORKDIR
