@@ -31,7 +31,7 @@ top -b -p[PID] -d[INTERVAL] -n[CYCLEs]
 
 ## npool for Phonon Calculation
 
-| ID| ph time|scf time| npool |NOte|
+| ID| ph time|scf time| npool |
 | -- | -- | -- | -- | -- |
 | 1 | 1h56m |2m12.63s| 4 |
 | 2 | 3h50m |3m37.29s| 2 |
