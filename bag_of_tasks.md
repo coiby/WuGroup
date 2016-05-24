@@ -48,6 +48,8 @@ different self-consistent or linear-response calculation, loosely coupled to oth
 |12    |  48x24=1152| 1h 18m   | 1h 20m   |phonon  -nimage  48 -npool 3 -ntg 2 -ndiag 4|test9_no_wf_collect,wf_collect removed , output=70G|
 
 
+Take job9, job10, job11
+
 ## Non-blocking processes
 
 To run multiple jobs in one job script, the processes have to be started in a non-blocking way. In Renata's bag-of-tasks, this is implemented by using Python's `subprocess` module which allow you to spawn new processes and manage them
