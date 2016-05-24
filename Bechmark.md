@@ -30,6 +30,7 @@ top -b -p[PID] -d[INTERVAL] -n[CYCLEs]
 >当然在规划算法的时候，要选择理论上适合并行的算法放在GPU上实现，这样比较容易发挥出设备性能，比较有意义。在实现上，保证实现合理的前提下，使得GPU尽可能繁忙，这样一般就已经达到较好的效果。
 
 ## Official Quantum ESPRESSO Benchmarks
+>Several sets of data that have been used for benchmarks are available on QE-forge, in the QE Benchmarks section of the download area. Some data is reported in the paper documenting Quantum ESPRESSO: J.Phys.:Condens.Matter, 21, 395502 (2009). More recent data can be found here below. Everybody is welcome to contribute more data.
 
 [Benchmarks - QUANTUMESPRESSO](http://www.quantum-espresso.org/benchmarks/)
  
