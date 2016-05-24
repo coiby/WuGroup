@@ -24,3 +24,6 @@ top -b -p[PID] -d[INTERVAL] -n[CYCLEs]
 
 [关于“如何量化一个程序的优化程度” - NVIDIA 官方 CUDA 论坛 - Powered by Discuz!](https://cudazone.nvidia.cn/forum/forum.php?mod=viewthread&action=printable&tid=7695)
 >当前实现的计算吞吐率（TFlops/s单位）是否已经达到了设备的计算能力极限
+>
+>峰值运算一般是难以得到的，不仅受到带宽的影响，而且受到实际算法中指令比例的影响等等。因为是为了实际算法设计实现，所以请不要太纠结能否达到理论峰值。
+当然在规划算法的时候，要选择理论上适合并行的算法放在GPU上实现，这样比较容易发挥出设备性能，比较有意义。在实现上，保证实现合理的前提下，使得GPU尽可能繁忙，这样一般就已经达到较好的效果。
