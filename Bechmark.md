@@ -31,6 +31,8 @@ top -b -p[PID] -d[INTERVAL] -n[CYCLEs]
 
 ## npool for Phonon Calculation
 
+Based on the following test, npool=4 should be chosen.
+
 | ID| ph time|scf time| npool |
 | -- | -- | -- | -- | -- |
 | 1 | 1h56m |2m12.63s| 4 |
