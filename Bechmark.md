@@ -7,3 +7,7 @@ npool=1,2,4
 
 
 [andikleen/pmu-tools: Intel PMU profiling tools](https://github.com/andikleen/pmu-tools)
+
+	
+
+top -b -p[PID] -d[INTERVAL] -n[CYCLEs]
