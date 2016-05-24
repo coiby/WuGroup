@@ -21,3 +21,6 @@ Test how long does calculaton of one representation run? See if it's less 4hrs.
 top -b -p[PID] -d[INTERVAL] -n[CYCLEs]
 
 [How do I Find Out Linux CPU Utilization?](http://www.cyberciti.biz/tips/how-do-i-find-out-linux-cpu-utilization.html)
+
+[关于“如何量化一个程序的优化程度” - NVIDIA 官方 CUDA 论坛 - Powered by Discuz!](https://cudazone.nvidia.cn/forum/forum.php?mod=viewthread&action=printable&tid=7695)
+>当前实现的计算吞吐率（TFlops/s单位）是否已经达到了设备的计算能力极限
