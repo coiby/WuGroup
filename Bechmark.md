@@ -162,6 +162,33 @@ rm -rf $toutput
 
 ```
 
+## vc-relax on our own cluster
+
+|  job | running node|data node|cpu time|wall time|calculation|cores|note|
+|------|-------------|---------|--------|---------|-----------|-----|
+|1     |01           |01      |4h55m    |7h31m    |phonon     |16||
+|2     |02           |01      |3h 8m    |6h19m    |phonon     |16||
+|3     |01           |01      |5h 1m    |7h22m    |phonon     |32||
+|4     |02           |01      |3h31m    |9h18m    |phonon     |32||
+|5     |01           |01      |13h23m   |17h27m   |vc-relax   |16||
+|6     |02           |01      |10h53m   |23h 2m   |vc-relax   |16||
+|7     |02           |01      |12h33m   |30h59m   |vc-relax   |16||
+|8     |02           |02      |9h 4m    |10h32m   |vc-relax   |16||
+|9     |05           |01      |15h28m   |25h55m   |vc-relax   |16||
+|10    |05           |05      |10h53m   |5h49m    |vc-relax   |16|结果可能有错|
+|11    |06           |06      |5h9m     |6h23m    |vc-relax   |16||
+|12    |06           |06      |5h30m    |6h25m    |vc-relax   |16||
+|13    |04           |04      |5h15m    |6h23m    |vc-relax   |16||
+|14    |05           |05 RAM  |5h14m    |5h18m    |vc-relax   |16|disk_io='none'|
+|15    |06           |06 RAM  |5h29m    |5h33m    |vc-relax   |16|disk_io='none'|
+|17    |05           |05 RAM  |5h5m     |5h9m     |vc-relax   |16|disk_io='none'|
+|18    |06           |06 RAM  |6h41m    |6h59m    |vc-relax   |16||
+|19    |06           |06 RAM  |5h38m    |5h54m    |vc-relax   |16|disk_io='none', 13:10:26  27Oct2015 |
+|20    |06           |06 RAM  |12h35m    |12h45m    |vc-relax   |16|disk_io='none', 13:10:26  27Oct2015, pw.x 5.1 |
+|21    |03           |03 RAM  |5h17m    |5h30m    |vc-relax   |16|disk_io='none', 23:52:43  27Oct2015, |
+|22    |06           |06 RAM  |6h29m    |7h51m    |vc-relax   |16|disk_io='none', 23:52:43  1:32:38  27Oct2015 |
+
+
 ## Official Quantum ESPRESSO Benchmarks
 
 >Several sets of data that have been used for benchmarks are available on QE-forge, in the QE Benchmarks section of the download area. Some data is reported in the paper documenting Quantum ESPRESSO: J.Phys.:Condens.Matter, 21, 395502 (2009). More recent data can be found here below. Everybody is welcome to contribute more data.
