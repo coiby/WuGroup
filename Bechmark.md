@@ -5,7 +5,7 @@ Test the parameter -npool
 ~/home/coiby/flops
 npool=1,2,4
 
-Test how long does calculaton of one representation run?
+Test how long does calculaton of one representation run? See if it's less 4hrs.
 
 /home/coiby/flops/ph 
 (Note: on node06, hyperthreading is enabled)
