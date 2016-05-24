@@ -32,6 +32,7 @@ top -b -p[PID] -d[INTERVAL] -n[CYCLEs]
 ## npool for ph.x
 
 
+
 ```sh
 #!/bin/bash
 #PBS -N vctest-node06
@@ -151,7 +152,6 @@ MgAl2O4
  /
 EOF
 /opt/software/mpich2-intel/bin/mpirun -np 32 /opt/software/espresso-5.2.0/bin/ph.x -np $np < MgAl2O4_ph_Pt1np$np.in > MgAl2O4_ph_Pt1np$np.ph.out
-
 
 rm -rf $toutput
 
