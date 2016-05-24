@@ -3,7 +3,7 @@
 Test the parameter -npool (tunning the parameters to shorten the calculation which is equivalent of increasing efficiency of CPU usage)
 
 ~/home/coiby/flops
-npool=1,2,4
+npool=1,2,4,8
 
 Test how long does calculaton of one representation run? See if it's less 4hrs.
 
