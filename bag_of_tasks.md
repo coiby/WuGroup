@@ -48,8 +48,9 @@ different self-consistent or linear-response calculation, loosely coupled to oth
 |12    |  48x24=1152| 1h 18m   | 1h 20m   |phonon  -nimage  48 -npool 3 -ntg 2 -ndiag 4|test9_no_wf_collect,wf_collect removed , output=70G|
 
 
-Take job9, job10, job11
+Extract time data from job9, job10, job11
 ```
+#NUMER_OF_NODES TIME(m)
 8 187
 32 100
 48 70
