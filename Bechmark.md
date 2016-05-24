@@ -1,8 +1,13 @@
 # Bechmark
 
+Test the parameter -npool
+
 ~/home/coiby/flops
 npool=1,2,4
 
+Test how long does calculaton of one representation run?
+
+/home/coiby/flops/ph 
 (Note: on node06, hyperthreading is enabled)
 
 [Perf -- Linux下的系统性能调优工具，第 1 部分](https://www.ibm.com/developerworks/cn/linux/l-cn-perf1/)
