@@ -23,6 +23,7 @@ top -b -p[PID] -d[INTERVAL] -n[CYCLEs]
 
 [How do I Find Out Linux CPU Utilization?](http://www.cyberciti.biz/tips/how-do-i-find-out-linux-cpu-utilization.html)
 
+
 [关于“如何量化一个程序的优化程度” - NVIDIA 官方 CUDA 论坛 - Powered by Discuz!](https://cudazone.nvidia.cn/forum/forum.php?mod=viewthread&action=printable&tid=7695)
 >当前实现的计算吞吐率（TFlops/s单位）是否已经达到了设备的计算能力极限
 >
@@ -36,6 +37,10 @@ top -b -p[PID] -d[INTERVAL] -n[CYCLEs]
 ## npool for Phonon calculation on own cluster
 
 ~/home/coiby/flops/ph
+
+Watching
+- 6phnode05.pbs re-run on node05 (npool=4)
+- np1.pbs (npool=1)
 
 Based on the following table, npool=4 should be chosen for calculations running on our own [cluster](pbs.md).
 
