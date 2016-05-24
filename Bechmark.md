@@ -34,5 +34,5 @@ top -b -p[PID] -d[INTERVAL] -n[CYCLEs]
 [Benchmarks - QUANTUMESPRESSO](http://www.quantum-espresso.org/benchmarks/)
  
 ![](http://www.quantum-espresso.org/wp-content/uploads/2011/07/wtecfig0-300x250.png)
- 
-in a cubic box 13.35 A side, Γ point, PWscf code on a SP6 machine, MPI only. ntg=1: parallelization on plane waves only; ntg=4 also on electron states 
+
+128 Water molecules (1024 electrons)  in a cubic box 13.35 A side, Γ point, PWscf code on a SP6 machine, MPI only. ntg=1: parallelization on plane waves only; ntg=4 also on electron states 
