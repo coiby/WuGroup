@@ -1,6 +1,6 @@
 # Bechmark
 
-Test the parameter -npool
+Test the parameter -npool (tunning the parameters to shorten the calculation which is equivalent of increasing efficiency of CPU usage)
 
 ~/home/coiby/flops
 npool=1,2,4
