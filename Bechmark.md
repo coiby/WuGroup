@@ -1,5 +1,8 @@
 # Bechmark
 
+~/home/coiby/flops
+npool=1,2,3,4
+
 [Perf -- Linux下的系统性能调优工具，第 1 部分](https://www.ibm.com/developerworks/cn/linux/l-cn-perf1/)
 
 
