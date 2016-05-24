@@ -150,7 +150,7 @@ MgAl2O4
   amass(1)=24.305,
   amass(2)=26.9815,
   amass(3)=15.9994,
-  outdir='$TMPDIR/'
+  outdir='$toutput/'
   fildyn='MgAl2O4_P$pres.dyn'
  /
 EOF
