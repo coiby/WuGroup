@@ -57,7 +57,7 @@ The last line tells job system to use MPI to execute pw.x(part of Quantum Espres
 ```sh
 #!/bin/bash
 #PBS -N MgSiO3-scf-phon                          #<- job name is MgSiO3-scf-phon which will be shown in the queue if you use qstat
-#PBS -l nodes=node03:ppn=4          #<- use node03 (4 cores in total).
+#PBS -l nodes=node03:ppn=16          #<- use node03 (16 cores in total).
 #PBS -l walltime=03:00:00                        #<- run job for 3 hours(that means the job will be terminated if 3 hour limit is reached) 
 #PBS -e error                                    #<- errors will be written to file 'error'
 #PBS -o OUT                                      #<- output will be written to file 'OUT'
@@ -144,7 +144,7 @@ K_POINTS {automatic}
 2  2  2  0  0  0
 
 EOF
-mpirun -np 8 pw.x <  P0.scf.in > P0.scf.out
+mpirun -np 16 -npool 4 pw.x <  P0.scf.in > P0.scf.out
 rm -rf $toutput
 ```
 
