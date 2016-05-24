@@ -9,7 +9,7 @@ npool=1,2,4
 
 
 [andikleen/pmu-tools: Intel PMU profiling tools](https://github.com/andikleen/pmu-tools)
-
+- [The overhead of profiling using PMU hardware counters](http://openlab.web.cern.ch/sites/openlab.web.cern.ch/files/technical_documents/TheOverheadOfProfilingUsingPMUhardwareCounters.pdf)
 	
 
 top -b -p[PID] -d[INTERVAL] -n[CYCLEs]
