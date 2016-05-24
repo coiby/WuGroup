@@ -47,15 +47,11 @@ Testcase
 #PBS -e error6
 #PBS -o OUT6
 
-
 np=2
+
 toutput=/tmp${PBS_O_WORKDIR#/home}/$PBS_JOBID
-
 mkdir -p $toutput
-
 cd  $PBS_O_WORKDIR
-
-
 
 cat>MgAl2O4_Pt1np$np.scf.in<<EOF
 &CONTROL
