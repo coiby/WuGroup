@@ -33,10 +33,27 @@ top -b -p[PID] -d[INTERVAL] -n[CYCLEs]
 
 
 ```sh
+#!/bin/bash
+#PBS -N vctest-node06
+#PBS -l nodes=node06:ppn=16
+#PBS -l walltime=3000:00:00
+#PBS -e error6
+#PBS -o OUT6
+
+
+np=2
+toutput=/tmp${PBS_O_WORKDIR#/home}/$PBS_JOBID
+
+mkdir -p $toutput
+
+cd  $PBS_O_WORKDIR
+
+
+
 cat>MgAl2O4_Pt1np$np.scf.in<<EOF
 &CONTROL
     calculation='scf',
-    outdir='$TMPDIR/',
+    outdir='$toutput/',
     pseudo_dir='~/pseudo',
     forc_conv_thr=1.0d-4,
     dt=30,
@@ -109,6 +126,34 @@ O        0.929105776   0.912159946   0.250037719
 K_POINTS {automatic}
 3 3  9  0  0  0
 EOF
+
+/opt/software/mpich2-intel/bin/mpirun -np 32 /opt/software/espresso-5.2.0/bin/pw.x -np $np < MgAl2O4_Pt1np$np.scf.in > MgAl2O4_Pt1np$np.scf.out
+
+cat>MgAl2O4_ph_Pt1$pres.in<<EOF
+MgAl2O4
+&inputph
+  tr2_ph=1.0d-14,
+  prefix='MgAl2O4'
+  epsil=.true.
+  reduce_io=.true.
+  ldisp=.true.
+  recover=.true.
+  nq1=2, nq2=2, nq3=3,
+  start_q=1,
+  last_q=8,
+  start_irr=1,
+  last_irr=1,
+  amass(1)=24.305,
+  amass(2)=26.9815,
+  amass(3)=15.9994,
+  outdir='$TMPDIR/'
+  fildyn='MgAl2O4_P$pres.dyn'
+ /
+EOF
+/opt/software/mpich2-intel/bin/mpirun -np 32 /opt/software/espresso-5.2.0/bin/ph.x -np $np < MgAl2O4_ph_Pt1np$np.in > MgAl2O4_ph_Pt1np$np.ph.out
+
+
+rm -rf $toutput
 
 ```
 
