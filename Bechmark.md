@@ -38,7 +38,8 @@ top -b -p[PID] -d[INTERVAL] -n[CYCLEs]
 | 2 | 4h15m |3m 5.78s| 8 |
 
 
-Testcase
+Testcase script (on node06, hyperthreading is enabled)
+
 ```sh
 #!/bin/bash
 #PBS -N vctest-node06
