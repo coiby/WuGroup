@@ -135,7 +135,7 @@ EOF
 
 /opt/software/mpich2-intel/bin/mpirun -np 32 /opt/software/espresso-5.2.0/bin/pw.x -np $np < MgAl2O4_Pt1np$np.scf.in > MgAl2O4_Pt1np$np.scf.out
 
-cat>MgAl2O4_ph_Pt1$pres.in<<EOF
+cat>MgAl2O4_ph_Pt1np$np.in<<EOF
 MgAl2O4
 &inputph
   tr2_ph=1.0d-14,
