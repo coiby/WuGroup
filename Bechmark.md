@@ -35,7 +35,7 @@ top -b -p[PID] -d[INTERVAL] -n[CYCLEs]
 
 ## npool for Phonon calculation on own cluster
 
-~//home/coiby/flops/vc_k4
+~/home/coiby/flops/ph
 
 Based on the following table, npool=4 should be chosen for calculations running on our own [cluster](pbs.md).
 
