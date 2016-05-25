@@ -26,6 +26,8 @@ Test how long does calculaton of one representation run? See if it's less than 4
 
 ~/home/coiby/flops/ph
 
+re-run /home/coiby/flops/ph_rerun
+
 Watching
 - 6phnode05.pbs re-run on node05 (npool=4)
 - np1.pbs (npool=1)
