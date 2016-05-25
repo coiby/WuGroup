@@ -34,10 +34,10 @@ K_POINTS 2 2 2
 
 | ID | Time | npool |
 | -- | -- | -- |
-| 1 |3h 7m | 1 |
-| 2 |2h42m | 2 |
-| 3 |3h16m | 4 |
-| 4 |4h44m | 8 |
+| 1 |1h14m | 1 |
+| 2 |1h 9m | 2 |
+| 3 |1h30m | 4 |
+| 4 |1h45m | 8 |
 
 
 ## npool for Phonon calculation on own cluster
