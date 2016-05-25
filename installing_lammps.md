@@ -34,7 +34,7 @@ make mpi
 ### USER-MISC
 
 There's a [bug]([Re: [lammps-users] Bug report about compiling the USER-MISC package](http://lammps.sandia.gov/threads/msg56953.html)) in this package, according to [Re: [lammps-users] Bug report about compiling the USER-MISC package](http://lammps.sandia.gov/threads/msg56953.html), the solution is remove `_noalias` in pair_list.cpp and it will not affect the simulation,
->​no. it will only affect how well the compiler can optimize the affected subroutine(s). any impact on simulations would be equivalent to turning other optimizations on or off. ​the purpose of this macros is to tell the compiler that pointer variables point to address space that no other pointers will be pointing to. by default a C/C++ compiler has to assume they do and thus cannot do particular optimizations.
+>no. it will only affect how well the compiler can optimize the affected subroutine(s). any impact on simulations would be equivalent to turning other optimizations on or off. the purpose of this macros is to tell the compiler that pointer variables point to address space that no other pointers will be pointing to. by default a C/C++ compiler has to assume they do and thus cannot do particular optimizations.
 
 To validate if `USER-MISC` if successfully installed, run the provided example 
 ```sh
