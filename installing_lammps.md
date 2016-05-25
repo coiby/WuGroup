@@ -32,7 +32,7 @@ make mpi
 
 ### USER-MISC
 
-There's a [bug]([Re: [lammps-users] Bug report about compiling the USER-MISC package](http://lammps.sandia.gov/threads/msg56953.html)) in this package, according to [Re: [lammps-users] Bug report about compiling the USER-MISC package](http://lammps.sandia.gov/threads/msg56953.html), the solution is remove `_noalias`.
+There's a [bug]([Re: [lammps-users] Bug report about compiling the USER-MISC package](http://lammps.sandia.gov/threads/msg56953.html)) in this package, according to [Re: [lammps-users] Bug report about compiling the USER-MISC package](http://lammps.sandia.gov/threads/msg56953.html), the solution is remove `_noalias` in pair_list.cpp.
 
 
 
