@@ -28,7 +28,13 @@ make yes-user-misc
 make mpi
 ```
 
-## “Invalid ... style” (e.g. missing full atom style )
+## Packages Installation
+
+
+
+## Issues
+
+### “Invalid ... style” (e.g. missing full atom style )
 
 [12. Errors — LAMMPS documentation](http://lammps.sandia.gov/doc/Section_errors.html)
 >f you get an error like “Invalid ... style”, with ... being fix, compute, pair, etc, it means that you mistyped the style name or that the command is part of an optional package which was not compiled into your executable.
@@ -40,7 +46,7 @@ You can run `/home/coiby/lammps/src/lmp_mpi -h` to get the list of available sty
 atomic          body            charge          ellipsoid       hybrid          
 line            sphere          tri
 ```
-### Missing full atom style
+#### Missing full atom style
 
 [LAMMPS / Mailing Lists](https://sourceforge.net/p/lammps/mailman/message/34639586/)
 >atom_style full is part of the MOLECULE package, which you didn't install.
@@ -48,7 +54,7 @@ when you compile from the git repo, no packages are installed by default.
 
 After you execute `make yes-molecule`, you need to re-run `make mpi`.
 
-### Missing pair style `long`
+#### Missing pair style `long`
 
 When running examples/dreiding, an error is given:
 >invalid pair style...
@@ -59,12 +65,12 @@ According to [pair_style lj/long/coul/long command — LAMMPS documentation](htt
 1. `make yes-kspace`
 2. `make mpi`
 
-## pair_eam_opt.cpp  error
+### pair_eam_opt.cpp  error
 
 [Re: [lammps-users] Compiling errors - advice needed](http://lammps.sandia.gov/threads/msg48777.html)
 >If you read the sections of different accelerator packages under doc/Section_accelerate.html, you will see that several of them (including USER-INTEL) require new compiler flags.  So it is best not to install those packages unless a) you intend to use them, and b) you read the associated doc pages that explain how to build with them.
 
-##  libraries: libimf.so: cannot open shared object file
+###  libraries: libimf.so: cannot open shared object file
 If you encounter this problem,
 >/home/coiby/lammps/src/lmp_mpi: error while loading shared libraries: libimf.so: cannot open shared object file: No such file or directory
 
