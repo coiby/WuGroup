@@ -22,6 +22,13 @@ Test how long does calculaton of one representation run? See if it's less than 4
 
 ~/home/coiby/flops/vc_k4
 
+| ID | Time | npool |
+| -- | -- | -- |
+| 1 |3h 7m | 1 |
+| 2 |2h42m | 2 |
+| 3 |3h16m | 4 |
+| 4 |4h44m | 8 |
+
 ## npool for Phonon calculation on own cluster
 
 ~/home/coiby/flops/ph
