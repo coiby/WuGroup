@@ -9,7 +9,7 @@ Test how long does calculaton of one representation run? See if it's less than 4
 
 /home/coiby/flops/ph (npool=2,4,8)
 
-
+(Note: on node06, hyperthreading is enabled)
 
 
 [关于“如何量化一个程序的优化程度” - NVIDIA 官方 CUDA 论坛 - Powered by Discuz!](https://cudazone.nvidia.cn/forum/forum.php?mod=viewthread&action=printable&tid=7695)
