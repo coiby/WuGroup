@@ -15,7 +15,7 @@ mpirun -np 4 ~/lammps/src/lmp_mpi -in in.lj
 
 Or you can install pre-built binary RPMs (SEE [Pre-built binary RPMs for Fedora/RedHat/CentOS/openSUSE](http://lammps.sandia.gov/download.html#rpm)
 
-Notes:
+## Notes
 1. When you download LAMMPS source files from the SVN or Git repositories, no packages are pre-installed. You can run `make yes-packageName` to install a required package or `make yes-all` to install all packages.
 2. `make no-lib` remove the packages than depend on third-party packages
 3. If you need to install a new package and an error such as "error Please set -DLAMMPS_MEMALIGN=64" is thrown when executing `make mpi`, a trick to bypass this problem is to install from scratch,
@@ -29,6 +29,10 @@ make mpi
 ```
 
 ## Packages Installation
+
+### USER-MISC
+
+There's a [bug]([Re: [lammps-users] Bug report about compiling the USER-MISC package](http://lammps.sandia.gov/threads/msg56953.html)) in this package, according to [Re: [lammps-users] Bug report about compiling the USER-MISC package](http://lammps.sandia.gov/threads/msg56953.html), the solution is remove `_noalias`.
 
 
 
