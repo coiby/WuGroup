@@ -9,9 +9,9 @@ job.lsf
 #!/bin/sh
 #BSUB -q wuzq
 #BSUB -o %J.log −e %J.err
-#BSUB -n 24
+#BSUB -n 12
  
-mpijob -np 14 /opt/bin/vasp-5.2.11-141218
+mpijob -np 12 /opt/bin/vasp-5.2.11-141218
  
 ```
 ## Test
