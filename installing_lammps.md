@@ -24,7 +24,7 @@ Notes:
 cd src
 make yes-molecule
 make yes-kspace
-make yes-misc
+make yes-user-misc
 make mpi
 ```
 
