@@ -14,6 +14,12 @@ job.lsf
 mpijob -np 14 /opt/bin/vasp-5.2.11-141218
  
 ```
+## Test
+
+~/speedtest
+- test1 24cores
+- test12 12core
+- test1p 1core
 
 ## Tips
 1. `bjobs -l|grep node` on which nodes the jobs are running
