@@ -20,6 +20,8 @@ Notes:
 2. `make no-lib` remove the packages than depend on third-party packages
 3. If you need to install a new package and an error such as "error Please set -DLAMMPS_MEMALIGN=64" is thrown when executing `make mpi`, a trick to bypass this error is to install from scratch,
 ```bash
+#extract the sourcesource
+cd src
 make yes-molecule
 make yes-kspace
 make yes-misc
