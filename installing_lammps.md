@@ -18,7 +18,7 @@ Or you can install pre-built binary RPMs (SEE [Pre-built binary RPMs for Fedora/
 Notes:
 1. When you download LAMMPS source files from the SVN or Git repositories, no packages are pre-installed. You can run `make yes-packageName` to install a required package or `make yes-all` to install all packages.
 2. `make no-lib` remove the packages than depend on third-party packages
-3. If you need to install a new package and an error such as "error Please set -DLAMMPS_MEMALIGN=64" is thrown when executing `make mpi`, a trick to bypass this error is to install from scratch,
+3. If you need to install a new package and an error such as "error Please set -DLAMMPS_MEMALIGN=64" is thrown when executing `make mpi`, a trick to bypass this problem is to install from scratch,
 ```bash
 #extract the sourcesource
 cd src
