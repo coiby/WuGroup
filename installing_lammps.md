@@ -91,4 +91,5 @@ export LD_LIBRARY_PATH=/opt/intel/icc/composer_xe_2013.3.163/mkl/lib/intel64:/op
 
 ## Reference
 
-[LAMMPS安装与使用](http://www.sccas.cas.cn/yhfw/wdypx/wd/jswd/201112/W020111215327529481126.pdf)
+1. [LAMMPS安装与使用](http://www.sccas.cas.cn/yhfw/wdypx/wd/jswd/201112/W020111215327529481126.pdf)
+2. [Lammps-build - UFRC](https://wiki.rc.ufl.edu/doc/Lammps-build)
