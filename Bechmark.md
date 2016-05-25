@@ -34,9 +34,10 @@ Based on the following table, npool=4 should be chosen for calculations running 
 
 | ID| ph time|scf time| npool |
 | -- | -- | -- | -- | -- |
-| 1 | 1h56m |2m12.63s| 4 |
-| 2 | 3h50m |3m37.29s| 2 |
-| 2 | 4h15m |3m 5.78s| 8 |
+| 1 | 1h44m |1m21.29s| 1 |
+| 2 | 1h56m |2m12.63s| 4 |
+| 3 | 3h50m |3m37.29s| 2 |
+| 4 | 4h15m |3m 5.78s| 8 |
 
 
 Testcase script (on node06, hyperthreading is enabled)
