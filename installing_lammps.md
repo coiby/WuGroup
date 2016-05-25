@@ -34,7 +34,11 @@ make mpi
 
 There's a [bug]([Re: [lammps-users] Bug report about compiling the USER-MISC package](http://lammps.sandia.gov/threads/msg56953.html)) in this package, according to [Re: [lammps-users] Bug report about compiling the USER-MISC package](http://lammps.sandia.gov/threads/msg56953.html), the solution is remove `_noalias` in pair_list.cpp.
 
-
+To validate if `USER-MISC` if successfully installed, run the example
+```sh
+cd ~/lammps-16Feb16/examples/USER/misc/ti
+mpirun -np 4  ~/lammps-16Feb16/src/lmp_mpi < in.ti_rs
+```
 
 ## Issues
 
