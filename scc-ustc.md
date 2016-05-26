@@ -15,7 +15,7 @@ mpijob /opt/bin/vasp-5.2.11-141218
 ```
 
 ## Notes
-1. Don't make mistake about job header, for example, mis-type `-e `as`−e`, otherwise for VASP, only 1 process will be running
+1. Don't make mistake about job header, for example, mis-type `-e `as`−e`, otherwise for VASP, only 1 process will be running.
 
 ## Test
 
