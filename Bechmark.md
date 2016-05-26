@@ -54,7 +54,14 @@ re-run /home/coiby/flops/ph_rerun (mis-use `-nk` as `-np`, re-re-run!)
 ```
 (according to the above result, the parameter `npool` has marginal effect)
 
-/home/coiby/flops/ph4q (two representations and 32 processes) (the parameter `npool` has marginal effect, I guess if it is caused by too few processes)
+/home/coiby/flops/ph4q (one representation and 32 processes) (the parameter `npool` has marginal effect, I guess if it is caused by too few processes)
+```
+1 1h26m WALL
+2 1h10m WALL
+4 1h 9m WALL
+8 1h 9m WALL
+
+```
 
 
 Watching
@@ -71,7 +78,7 @@ Based on the following table, npool=4 should be chosen for calculations running 
 | 4 | 4h15m |3m 5.78s| 8 |
 
 
-Testcase script (on node06, hyperthreading is enabled)
+Test case script (on node06, hyperthreading is enabled)
 
 ```sh
 #!/bin/bash
