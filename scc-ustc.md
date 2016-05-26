@@ -8,10 +8,10 @@ job.lsf
 ```sh
 #!/bin/sh
 #BSUB -q wuzq
-#BSUB -o %J.log −e %J.err
+#BSUB -o %J.log -e %J.err
 #BSUB -n 12
  
-mpijob -np 12 /opt/bin/vasp-5.2.11-141218 
+mpijob /opt/bin/vasp-5.2.11-141218 
 ```
 
 ## Notes
