@@ -46,8 +46,7 @@ K_POINTS 2 2 2
 
 re-run /home/coiby/flops/ph_rerun (mis-use `-nk` as `-np`, re-re-run!)
 
-/home/coiby/flops/ph4q (two representations and 32 processes)
-
+/home/coiby/flops/ph4q (two representations and 32 processes) (the parameter `npool` has marginal effect, I guess if it is caused by too few processes)
 
 
 Watching
