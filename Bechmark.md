@@ -44,7 +44,7 @@ K_POINTS 2 2 2
 
 ~/home/coiby/flops/ph
 
-re-run /home/coiby/flops/ph_rerun
+re-run /home/coiby/flops/ph_rerun (mis-use `-nk` as `-np`, re-re-run!)
 
 Watching
 - 6phnode05.pbs re-run on node05 (npool=4)
