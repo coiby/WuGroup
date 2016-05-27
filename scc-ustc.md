@@ -32,3 +32,4 @@ mpijob /opt/bin/vasp-5.2.11-141218
 1. `bjobs -l|grep node` on which nodes the jobs are running
 2. ` bjobs -l|grep 'BSUB -n` how many cpu cores are applied for
 3. `bqueues -l [quename]`
+4. `bjobs -u [username]` list jobs ran by a specified user
