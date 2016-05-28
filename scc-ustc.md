@@ -33,3 +33,5 @@ mpijob /opt/bin/vasp-5.2.11-141218
 2. ` bjobs -l|grep 'BSUB -n` how many cpu cores are applied for
 3. `bqueues -l [quename]`
 4. `bjobs -u [username]` list jobs ran by a specified user
+5. `bmod` Modifies job submission options of a job 
+ - `bmod -n NUMBER_OF_CORES [jobid]` change the number of cores for a job
