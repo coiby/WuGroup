@@ -97,6 +97,8 @@ echo "#2 finished"
 ## Issues
 
 
+Watch out if there are many instances of `pw.x` running together, it may cause I/O problem.
+
 ### Threaded MKL
 
 /HOME/nsfc2015_369/bag-of-task/testthread
