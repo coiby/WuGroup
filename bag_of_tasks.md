@@ -51,7 +51,7 @@ different self-consistent or linear-response calculation, loosely coupled to oth
 Extract time data from job9, job10, job11
 ```
 #NUMER_OF_NODES TIME(m)
-
+  
 8 187
 32 100
 48 70
@@ -62,10 +62,13 @@ Extract time data from job9, job10, job11
 plotting script
 ```sh
 set terminal svg enhanced font 'Helvetica,10'
+set xrange [8:50]
+a=187/8.0
+g(x) = a*x
 set xlabel 'cores'
 set ylabel 'Time(s)'
 set output 'VASP_Scalability.svg'
-plot 'aa' w l t 'VASP Scalability'
+plot 'aa' w l t 'VASP Scalability', g(x)  
 ```
 
 
