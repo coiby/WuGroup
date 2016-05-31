@@ -66,7 +66,7 @@ set xrange [8:50]
  
 g(x) = x/8
 set xlabel 'cores'
-set ylabel 'Time(s)'
+set ylabel 'Speedup'
 set output 'VASP_Scalability.svg'
 plot 'aa' u 1:(187/$2) w l t 'Scalability', g(x)  
 ```
