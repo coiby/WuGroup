@@ -63,7 +63,7 @@ plotting script
 ```sh
 set terminal svg enhanced font 'Helvetica,10'
 set xrange [8:50]
-a=187/8.0
+ 
 g(x) = x/8
 set xlabel 'cores'
 set ylabel 'Time(s)'
