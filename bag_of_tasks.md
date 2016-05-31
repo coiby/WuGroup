@@ -63,7 +63,6 @@ plotting script
 ```sh
 set terminal svg enhanced font 'Helvetica,10'
 set xrange [8:50]
- 
 g(x) = x/8
 set xlabel 'cores'
 set ylabel 'Speedup'
