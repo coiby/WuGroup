@@ -64,7 +64,7 @@ plotting script
 set terminal svg enhanced font 'Helvetica,10'
 set xrange [8:50]
 a=187/8.0
-g(x) = a*x
+g(x) = a/x
 set xlabel 'cores'
 set ylabel 'Time(s)'
 set output 'VASP_Scalability.svg'
