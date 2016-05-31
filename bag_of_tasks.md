@@ -67,6 +67,7 @@ g(x) = x/8
 set xlabel 'cores'
 set ylabel 'Speedup'
 set output 'VASP_Scalability.svg'
+#use node=8 as baseline
 plot 'aa' u 1:(187/$2) w l t 'Scalability', g(x) t 'Ideal scaling'
 ```
 
