@@ -56,6 +56,18 @@ Extract time data from job9, job10, job11
 48 70
 ```
 
+### Plotting
+
+plotting script
+```sh
+set terminal svg enhanced font 'Helvetica,10'
+set xlabel 'cores'
+set ylabel 'Time(s)'
+set output 'VASP_Scalability.svg'
+plot 'aa' w l t 'VASP Scalability'
+```
+
+
 ## Non-blocking processes
 
 To run multiple jobs in one job script, the processes have to be started in a non-blocking way. In Renata's bag-of-tasks, this is implemented by using Python's `subprocess` module which allow you to spawn new processes and manage them
