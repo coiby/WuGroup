@@ -106,7 +106,7 @@ Watch out for the case that many instances of `pw.x` running together cause I/O 
 
 ### pw.x run with a different number of pools
 
-You should make sure ph.x has the same amount of processes per image as pw.x. Otherwise you will have to use `wf_collect=.true.` which will eat a lot of disk space and should be avoided.
+You should make sure `ph.x` has the same amount of processes per image as `pw.x`. Otherwise you will have to use `wf_collect=.true.` which will eat a lot of disk space and should be avoided.
      
 ```
  Error in routine phq_readin (1):
