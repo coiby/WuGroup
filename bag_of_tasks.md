@@ -64,8 +64,8 @@ plotting script
 set terminal svg enhanced font 'Helvetica,10'
 set xrange [8:50]
 g(x) = x/8
-set xlabel 'cores'
-set ylabel 'Speedup'
+set xlabel '核数'
+set ylabel '效率'
 set output 'QE_ph.x_Scalability.svg'
 #use node=8 as baseline
 plot 'aa' u 1:(187/$2) w l t 'Strong Scalability', g(x) t 'Ideal scaling'
