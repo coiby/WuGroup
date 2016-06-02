@@ -60,15 +60,19 @@ Extract time data from job9, job10, job11
 ### Plotting
 
 plotting script
+
+LD_PRELOAD=/lib/x86_64-linux-gnu/libreadline.so.6 gnuplot pl.sh
+
 ```sh
+#!/bin/bash
 set terminal svg enhanced font 'Helvetica,10'
+#set term pngcairo lw 2 font "AR PL UKai CN,14"
 set format y "%g %%"
-set xrange [8:50]
 set xlabel '核数'
 set ylabel '效率'
 set output 'QE_ph.x_Scalability.svg'
 #use node=8 as baseline
-plot 'aa' u ($1*24):($2*100) w l t '强扩展', 'aa' u ($1*24):($2*100) w l t '弱扩展'
+plot 'aa' u ($1*24):($2*100) w l t '强扩展', 'bb' u ($1*24):($2*100) w l t '弱扩展'
 ```
 
 
