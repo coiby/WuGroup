@@ -64,13 +64,11 @@ plotting script
 set terminal svg enhanced font 'Helvetica,10'
 set format y "%g %%"
 set xrange [8:50]
-g(x) = x/8
 set xlabel '核数'
 set ylabel '效率'
 set output 'QE_ph.x_Scalability.svg'
 #use node=8 as baseline
-plot 'aa' u 1:(187/$2) w l t 'Strong Scalability', g(x) t 'Ideal scaling'
-plot 'aa' u 1:(187/$2) w l t 'Weak Scalability', g(x) t 'Ideal scaling'
+plot 'aa' u ($1*24):($2*100) w l t '强扩展', 'aa' u ($1*24):($2*100) w l t '弱扩展', 
 ```
 
 
