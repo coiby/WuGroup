@@ -68,7 +68,7 @@ set xlabel '核数'
 set ylabel '效率'
 set output 'QE_ph.x_Scalability.svg'
 #use node=8 as baseline
-plot 'aa' u ($1*24):($2*100) w l t '强扩展', 'aa' u ($1*24):($2*100) w l t '弱扩展', 
+plot 'aa' u ($1*24):($2*100) w l t '强扩展', 'aa' u ($1*24):($2*100) w l t '弱扩展'
 ```
 
 
