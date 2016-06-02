@@ -61,6 +61,8 @@ Extract time data from job9, job10, job11
 
 plotting script
 
+(Chinese is not poorly suppored by `libedit`, preload `libreadline`)  
+
 LD_PRELOAD=/lib/x86_64-linux-gnu/libreadline.so.6 gnuplot pl.sh
 
 ```sh
