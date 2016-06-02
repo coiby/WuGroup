@@ -62,6 +62,7 @@ Extract time data from job9, job10, job11
 plotting script
 ```sh
 set terminal svg enhanced font 'Helvetica,10'
+set format y "%g %%"
 set xrange [8:50]
 g(x) = x/8
 set xlabel '核数'
