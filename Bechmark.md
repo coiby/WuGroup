@@ -22,7 +22,9 @@ Test how long does calculaton of one representation run? See if it's less than 4
 
 If multiple nodes compute the same image, how is the scalability? Will the computing time be reduced by half.
 
-I was worried that if two nodes compute the same image, inter-node communication is unavoidable. But according to the benchmark test, it's much better than I've expected.
+I was worried that if two nodes compute the same image, inter-node communication is unavoidable. But according to the benchmark test, it's much better than I've expected. 
+
+Another concern is I/O issue. I assume I/O will be the bottlenech. So I try to reduce I/O as much as possible. 
 
 | ID | nodes | npool | time |
 | -- | -- | -- | -- |
