@@ -18,9 +18,9 @@ Test how long does calculaton of one representation run? See if it's less than 4
 >峰值运算一般是难以得到的，不仅受到带宽的影响，而且受到实际算法中指令比例的影响等等。因为是为了实际算法设计实现，所以请不要太纠结能否达到理论峰值。
 >当然在规划算法的时候，要选择理论上适合并行的算法放在GPU上实现，这样比较容易发挥出设备性能，比较有意义。在实现上，保证实现合理的前提下，使得GPU尽可能繁忙，这样一般就已经达到较好的效果。
 
-## different nodes computing the same image (phonon mode)
+## multiple nodes computing the same image (phonon mode)
 
-If two nodes compute the same image, how is the scalability? Will the computing time be reduced by half 
+If multiple nodes compute the same image, how is the scalability? Will the computing time be reduced by half 
 
 | ID | nodes | npool | time |
 | -- | -- | -- | -- |
