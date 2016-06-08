@@ -20,6 +20,14 @@ Test how long does calculaton of one representation run? See if it's less than 4
 
 ## different nodes computing the same image (phonon mode)
 
+If two nodes compute the same image, how is the scalability? Will the computing time be reduced by half 
+
+| ID | nodes | npool | time |
+| -- | -- | -- | -- |
+| 1 | 1 | 4 | 1h 5m|
+| 2 | 2 | 4 | 38m |
+| 2 | 2 | 6 | 35m |
+| 2 | 2 | 8 | 36m |
 
 
 ## npool for vc-relax calculation on own cluster
