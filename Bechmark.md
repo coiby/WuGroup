@@ -24,8 +24,6 @@ If multiple nodes compute the same image, how is the scalability? Will the compu
 
 I was worried that if two nodes compute the same image, inter-node communication is unavoidable. But according to the benchmark test, it's much better than I've expected. 
 
-
-
 Another concern is I/O issue. I assume I/O will be the bottlenech. So I try to reduce I/O as much as possible. 
 
 `/HOME/nsfc2015_369/bag-of-task/test20` is run to verify if the size of `outdir` is reduced.
