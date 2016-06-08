@@ -28,7 +28,7 @@ I was worried that if two nodes compute the same image, inter-node communication
 
 Another concern is I/O issue. I assume I/O will be the bottlenech. So I try to reduce I/O as much as possible. 
 
-`/HOME/nsfc2015_369/bag-of-task/test20`
+`/HOME/nsfc2015_369/bag-of-task/test20` is run to verify this idea.
 
 | ID | nodes | npool | time |
 | -- | -- | -- | -- |
