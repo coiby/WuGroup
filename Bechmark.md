@@ -20,7 +20,9 @@ Test how long does calculaton of one representation run? See if it's less than 4
 
 ## multiple nodes computing the same image (phonon mode)
 
-If multiple nodes compute the same image, how is the scalability? Will the computing time be reduced by half 
+If multiple nodes compute the same image, how is the scalability? Will the computing time be reduced by half.
+
+I was worried that if two nodes compute the same image, inter-node communication is unavoidable. But according to the benchmark test, it's much better than I've expected.
 
 | ID | nodes | npool | time |
 | -- | -- | -- | -- |
