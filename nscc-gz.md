@@ -8,7 +8,9 @@ Notes:
 2. If more than 60 nodes (> 1440 cores) are required, submit the job to the partitions BIGJOB*(BIGJOB1/BIGJOB2...)
 3. The correct ssh port is `23`. You can still log in using port `22`, but the job will not run,
 >yhbatch: error: Batch job submission failed: Invalid partition name specified
-4. Fore more, check [SLURM资源管理系统使用入门](http://www.nscc-gz.cn/userfiles/files/[%E5%9F%BA%E9%87%91%E4%B8%93%E9%A1%B9%E6%95%99%E5%AD%A6%E8%B5%84%E6%96%99]-%E2%80%9C%E5%A4%A9%E6%B2%B3%E4%BA%8C%E5%8F%B7%E2%80%9D%E8%B5%84%E6%BA%90%E7%AE%A1%E7%90%86%E7%B3%BB%E7%BB%9F%E4%BD%BF%E7%94%A8%E5%85%A5%E9%97%A8.pdf)
+4. QE Parallelization on the level of thread is not supporeted
+>目前天河二号上的QE5.3.0为MPI版本，采用进程并行，不支持线程级并行。进程级并行的扩展性更好，可以跨节点并行，而OpenMP线程并行只能节点内并行。如果您是希望使用多个CPU核进行计算，只需按照我中心官网上QE介绍页的说明发起多个进程作业，则每个进程会占用一个CPU核。
+5. Fore more, check [SLURM资源管理系统使用入门](http://www.nscc-gz.cn/userfiles/files/[%E5%9F%BA%E9%87%91%E4%B8%93%E9%A1%B9%E6%95%99%E5%AD%A6%E8%B5%84%E6%96%99]-%E2%80%9C%E5%A4%A9%E6%B2%B3%E4%BA%8C%E5%8F%B7%E2%80%9D%E8%B5%84%E6%BA%90%E7%AE%A1%E7%90%86%E7%B3%BB%E7%BB%9F%E4%BD%BF%E7%94%A8%E5%85%A5%E9%97%A8.pdf)
 
 ## Job Script Example
 
