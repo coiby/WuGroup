@@ -7,13 +7,10 @@ tar xvfz phonopy-1.11.0.tar.gz
 cd phonopy-1.11.0
 ```
 3. Install
-
 ```
 python setup.py install --home=~/phonopy
-
 ```
 4. Put `lib/python` path into $PYTHONPATH, e.g., in your .bashrc,
-
 ```
 export PYTHONPATH=~/phonopy/lib64/python
 ```
