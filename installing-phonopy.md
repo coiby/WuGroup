@@ -20,7 +20,7 @@ python setup.py install --home=~/phonopy
 ```
 export PYTHONPATH=~/phonopy/lib64/python
 ```
-5. example
+5. Run example Si-pwscf
 ```sh
 ~/phonopy/bin/phonopy --pwscf -c Si.in -d --dim="2 2 2"
 ~/phonopy/bin/phonopy --pwscf -f supercell-001.out
