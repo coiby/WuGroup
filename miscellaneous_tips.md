@@ -14,10 +14,12 @@ sudo fuser -vm /dev/md0
 
 ## Batch-install packages on all nodes from server node
 
+Note: add `-y`, --assumeyes for yum
+
 ```sh
 #!/bin/sh
 
-yum install numpy python-devel python-matplotlib python-yaml
+yum -y install numpy python-devel python-matplotlib python-yaml
 
 for node in 1 2 3 4 5 6; do 
 ssh node0$node "yum install numpy python-devel python-matplotlib python-yaml"
