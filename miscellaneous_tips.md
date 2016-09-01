@@ -19,7 +19,7 @@ sudo fuser -vm /dev/md0
 
 yum install numpy python-devel python-matplotlib python-yaml
 
-for node in 2 3 4 5 6; do 
+for node in 1 2 3 4 5 6; do 
 ssh node0$node "yum install numpy python-devel python-matplotlib python-yaml"
 done
 
