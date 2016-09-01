@@ -1,6 +1,6 @@
 Following [Download and install — Phonopy v.1.11.0](https://atztogo.github.io/phonopy/install.html)
 
-First install requisites packages on Centos. 
+First install requisites packages on Centos. For details, check Batch-install packages on all nodes from server node.
 
 ```sh
 yum install numpy python-devel python-matplotlib python-yaml
