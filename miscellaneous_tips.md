@@ -12,7 +12,7 @@ sudo fuser -vm /dev/md0
 
 [linux - how to find the process that is doing io frequently? - Stack Overflow](https://stackoverflow.com/questions/5167794/how-to-find-the-process-that-is-doing-io-frequently)
 
-## Batch-install packages on all nodes
+## Batch-install packages on all nodes from server node
 
 ```sh
 #!/bin/sh
