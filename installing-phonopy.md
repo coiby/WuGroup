@@ -21,6 +21,7 @@ python setup.py install --home=~/phonopy
 export PYTHONPATH=~/phonopy/lib64/python
 ```
 5. example
-```
+```sh
+~/phonopy/bin/phonopy --pwscf -c Si.in -d --dim="2 2 2" ~/phonopy/bin/phonopy --pwscf -f supercell-001.out
 ~/phonopy/bin/phonopy --pwscf -c Si.in -p --dim="2 2 2" --pa="0 1/2 1/2 1/2 0 1/2 1/2 1/2 0" --band="1/2 1/2 1/2 0 0 0 1/2 0 1/2"
 ```
