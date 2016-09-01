@@ -7,6 +7,7 @@ tar xvfz phonopy-1.11.0.tar.gz
 cd phonopy-1.11.0
 ```
 3. Install
+
 ```
 python setup.py install --home=~/phonopy
 
