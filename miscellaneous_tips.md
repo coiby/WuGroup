@@ -14,7 +14,7 @@ sudo fuser -vm /dev/md0
 
 ## Batch-install packages on all nodes from server node
 
-Note: add `-y`, --assumeyes for yum
+Note: add `-y` (--assumeyes) for yum
 
 ```sh
 #!/bin/sh
