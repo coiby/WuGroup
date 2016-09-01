@@ -2,7 +2,7 @@ Following [Download and install — Phonopy v.1.11.0](https://atztogo.github.io/
 
 First install 
 
-```
+```sh
 yum install numpy python-devel python-matplotlib
 ```
 
