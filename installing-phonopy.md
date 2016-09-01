@@ -1,5 +1,11 @@
 Following [Download and install — Phonopy v.1.11.0](https://atztogo.github.io/phonopy/install.html)
 
+First install 
+
+```
+yum install numpy python-devel python-matplotlib
+```
+
 1. Download the package from  [phonopy - Browse /phonopy/phonopy-1.10 at SourceForge.net](https://sourceforge.net/projects/phonopy/files/phonopy/phonopy-1.10/)
 2. extract package
 ```
