@@ -16,7 +16,8 @@ sudo fuser -vm /dev/md0
 
 ```sh
 #!/bin/sh
-ssh node0$node "yum install numpy python-devel python-matplotlib python-yaml"
+
+yum install numpy python-devel python-matplotlib python-yaml
 
 for node in 2 3 4 5 6; do 
 ssh node0$node "yum install numpy python-devel python-matplotlib python-yaml"
