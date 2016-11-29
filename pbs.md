@@ -144,7 +144,7 @@ K_POINTS {automatic}
 2  2  2  0  0  0
 
 EOF
-mpirun -np 16 -npool 4 pw.x <  P0.scf.in > P0.scf.out
+mpirun -np 16 -npool 4 /opt/software/espresso-5.4.0/bin/pw.x <  P0.scf.in > P0.scf.out
 rm -rf $toutput
 ```
 
