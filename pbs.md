@@ -46,15 +46,17 @@ qsub
 
 The following example is a .pbs for scf calculation of Pervosikie-MgSiO3.
 
-Line 1 indicates this script is not other shells but bash shell.
+Line 1 indicates this script uses bash shell.
 
 Line 2-6 specify the job name, nodes, error file, output file, destination respectively.
 
 The rest lines mainly give the input for Quantum Espresso. For details please check input description of [Quantum Espresso](Quantum Espresso "wikilink").
 
-The last line tells job system to use MPI to execute pw.x(part of Quantum Espresso).
+The second to last line tells job system to use MPI to execute pw.x (part of Quantum Espresso).
 
-```sh
+The last line will remove temporary folder, i.e. `$toutput`.
+
+```bash
 #!/bin/bash
 #PBS -N MgSiO3-scf-phon                          #<- job name is MgSiO3-scf-phon which will be shown in the queue if you use qstat
 #PBS -l nodes=node03:ppn=16          #<- use node03 (16 cores in total).
@@ -63,7 +65,7 @@ The last line tells job system to use MPI to execute pw.x(part of Quantum Espres
 #PBS -o OUT                                      #<- output will be written to file 'OUT'
 #PBS -q gentai                                   #<- use “gentai” queue (there only one queue on our cluster)
                                                  #<- your commands start here
-toutput=/tmp${PBS_O_WORKDIR#/home}/$PBS_JOBID #temporary data saved to the disk of the computing node
+toutput=/tmp${PBS_O_WORKDIR#/home}/$PBS_JOBID    #temporary data saved to the disk of the computing node, this is crutial
  
 mkdir -p $toutput
 
@@ -76,7 +78,7 @@ cat>P0.scf.in<<EOF
     pseudo_dir='/home/coiby/pseudo',
     forc_conv_thr=1.0d-4,
     dt=30,
-  disk_io='none',
+    disk_io='none', 
     nstep=400,
     tstress=.true.
     prefix='MgCO3',
@@ -148,7 +150,7 @@ mpirun -np 16 -npool 4 /opt/software/espresso-5.4.0/bin/pw.x <  P0.scf.in > P0.s
 rm -rf $toutput
 ```
 
-There are six nodes on our cluster, node01(64 cores), node02(64 cores), node03-6(32 cores).
+There are seven computing nodes on our cluster, node01-2 (64 cores), node03-6 (32 cores), node08 (36 cores).
 
 ## Useful Commands
 
@@ -178,21 +180,34 @@ There are six nodes on our cluster, node01(64 cores), node02(64 cores), node03-6
 
 ## Important Notes
 
-​1. Node05,06 (128+64= 192G) have much larger memory than node03,04 (128G), if you have memory-consuming jobs, please submit them to node05, 06.
+​1. Node05, 06 (128+64 = 192G) have much larger memory than node03, 04 (128G), if you have memory-consuming jobs, please submit them to node05, 06.
 
-​2. Avoiding writing temp data to disk. But output temp data only to memory if possible. To learn more about **disk\_io**, please check **3.3.1 Understanding parallel I/O** in *User’s Guide for Quantum ESPRESSO.*
+​2. Avoiding writing temporary data to disk as much as possible. To learn more about **disk\_io**, please check **3.3.1 Understanding parallel I/O** in *User’s Guide for Quantum ESPRESSO.*
 
-`disk_io='none'`
+```
+'low' :
 
-​3. Choose proper parameter value for parallelization level, for example, you may choose less CPU cores (-npools, -nk) to reduce communication costs between cores. For details, check **3.3 Parallelization levels** in *User’s Guide for Quantum ESPRESSO.*
+    store wfc in memory, save only at the end
+                
+
+'none' :
+
+    do not save anything, not even at the end
+    ('scf', 'nscf', 'bands' calculations; some data
+    may be written anyway for other calculations)          
+```
+
+​3. If we have to save the temporay data during computation, output it to the local disk of the computing node. Never choose a folder under your home direcotory. `toutput=/tmp${PBS_O_WORKDIR#/home}/$PBS_JOBID` in the above PBS script will be a folder located in the local disk of the computing node.
+
+​4. Choose proper parameter value for parallelization level, for example, you may choose less CPU cores (-npools, -nk) to reduce communication costs between cores. For details, check **3.3 Parallelization levels** in *User’s Guide for Quantum ESPRESSO.*
 
 `mpirun -np 4096 ./neb.x -ni 8 -nk 2 -nt 4 -nd 144 -i my.input`
 
-​4. Select the node which has the most free resources.
+​5. Select the node which has the most free resources.
 
 ## Q&A
 
-### 1.  What can do if the job is in the state "E" and also can't be deleted?
+### 1.  What can I do if the job is in the state "E" and also can't be deleted?
 
 `qdel: Request invalid for state of job MSG=invalid state for job - EXITING`
 
