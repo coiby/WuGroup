@@ -12,7 +12,7 @@ This book will contain necessary info of Wu Group.
     - [VPN](NSCC_GZ_vpn.md)
   - [VASP](vasp.md)
 - [Administration](administration.md)
-    - [User Management](user management.md)
+    - [User Management](user_management.md)
     - [What to do after a node's system is re-installed](what_to_do_after_a_nodes_system_is_re-installed.md)
     - [HyperThreading](hyperthreading.md)
     - [Installing Lammps](installing_lammps.md)
