@@ -11,8 +11,11 @@
    ```bash
    useradd -m -g wu $username
    ```
-   
-3. Sync user database among different nodes
+3. set password
+   ```bash
+   passwd $username 
+   ```
+4. Sync user database among different nodes
    
    ```bash
    # sync user database among different nodes
