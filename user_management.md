@@ -1,17 +1,17 @@
 # User Management
 
-1. switch to root user
+1. Switch to root user
 
    ```bash
    sudo su root
    ```
    
-2. create user using `useradd`
+2. Create user using `useradd`
 
    ```bash
    useradd -m -g wu $username
    ```
-3. set password
+3. Set password
    ```bash
    passwd $username 
    ```
@@ -25,3 +25,7 @@
    chmod g+r /home/$usernam
    ```
 
+Or you can use `/root/script/createuser.sh` to create a new user
+```bash
+/root/script/createuser.sh $username $passwd
+```
